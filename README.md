@@ -4,7 +4,7 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/lerixhe/idc-network-observability)
 
-**状态：v0.1 骨架** —— 开篇两课已成稿，十个部分的篇首页面已铺好，实验 `00-setup` 可跑，其余课时为规划。
+**状态：v0.1 骨架** —— 第一部分（00–03）四课已成稿，十个部分的篇首页面已铺好，实验 `00-setup` 可跑，其余课时为规划。
 站点：<https://lerixhe.github.io/idc-network-observability/> · [English README](README.en.md)
 
 > 系列定位：**第一册**（本书）讲有损网络里的可观测，**第二册**是
@@ -87,7 +87,7 @@ Codespaces 一键即开：上面的徽章点进去，容器里已经装好 Go。
 
 | 版本 | 内容 |
 |---|---|
-| v0.1 | 骨架：站点、十个部分的篇首、开篇两课、`labs/00-setup`、CI 三件套（**当前**） |
+| v0.1 | 骨架：站点、十个部分的篇首、第一部分四课（00–03）、`labs/00-setup`、CI 三件套（**当前**） |
 | v0.2 | 部分一、二成稿（00–09）+ `01-portstate`、`02-device-alive` |
 | v0.3 | 部分三、四成稿（10–19）+ `03`–`07` |
 | v0.4 | 部分五、六成稿（20–29）+ `08`–`11` |

@@ -4,7 +4,7 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/lerixhe/idc-network-observability)
 
-**Status: v0.1 skeleton** — the opening two lessons are written, all ten part overviews are in place,
+**Status: v0.1 skeleton** — part 1 (lessons 00–03) is written, all ten part overviews are in place,
 `labs/00-setup` runs, the remaining lessons are planned.
 Site: <https://lerixhe.github.io/idc-network-observability/> · [中文 README](README.md)
 
@@ -100,7 +100,7 @@ the repo quickly; the labs, their code and their outputs are language-neutral.
 
 | Version | Scope |
 |---|---|
-| v0.1 | Skeleton: site, ten part overviews, opening two lessons, `labs/00-setup`, CI (current) |
+| v0.1 | Skeleton: site, ten part overviews, part 1 (00–03), `labs/00-setup`, CI (current) |
 | v0.2 | Parts 1–2 written (00–09) + `01-portstate`, `02-device-alive` |
 | v0.3 | Parts 3–4 written (10–19) + `03`–`07` |
 | v0.4 | Parts 5–6 written (20–29) + `08`–`11` |
