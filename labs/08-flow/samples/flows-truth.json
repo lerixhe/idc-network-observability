@@ -1,0 +1,21 @@
+{
+  "note": "一份真值：一条大象 + 一窝老鼠。窗口 60 秒，平均包长 1000 字节，pps 是每条流每秒的真实包数。",
+  "window_seconds": 60,
+  "mean_packet_bytes": 1000,
+  "flows": [
+    {"name": "elephant-backup", "src_ip": "10.20.0.10", "dst_ip": "10.30.9.9", "proto": "tcp", "src_port": 51400, "dst_port": 445, "pps": 25000},
+    {"name": "mice-db-replica", "src_ip": "10.20.1.11", "dst_ip": "10.30.2.21", "proto": "tcp", "src_port": 40122, "dst_port": 3306, "pps": 420},
+    {"name": "mice-web", "src_ip": "10.20.1.12", "dst_ip": "10.30.2.22", "proto": "tcp", "src_port": 51234, "dst_port": 8080, "pps": 180},
+    {"name": "mice-dns", "src_ip": "10.20.1.13", "dst_ip": "10.30.0.53", "proto": "udp", "src_port": 53100, "dst_port": 53, "pps": 60}
+  ],
+  "fanout": {
+    "prefix": "mice-batch",
+    "count": 180,
+    "pps_each": 12,
+    "src_ip_base": "10.40.0.0",
+    "dst_ip": "10.30.7.7",
+    "proto": "tcp",
+    "src_port": 39000,
+    "dst_port": 9092
+  }
+}
