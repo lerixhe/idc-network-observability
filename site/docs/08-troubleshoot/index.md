@@ -14,14 +14,14 @@ title: 第九部分 · 排障工具与定位（41–48）
 
 | 课 | 标题 | 解决的问题 | 实验 |
 |---|---|---|---|
-| 41 | 症状 → 工具：运维手里的八类工具 | 什么症状该用哪个工具，各自能答、不能答什么 | `15-tools-parse` |
-| 42 | 抓包：tcpdump 与 tshark | 过滤器怎么写；一个包在链路上丢在哪怎么看 | `16-capture` |
-| 43 | 路径工具：traceroute、mtr、paris | 三个工具的分歧点；ECMP 下路径不连贯 | `15-tools-parse` |
-| 44 | 主机与网卡：ethtool、ss、/proc | 网卡丢包、ring buffer 溢出、offload 造成的假象 | `16-capture` |
-| 45 | 命令输出解析与平台集成 | textfsm 与模板库；SSH 跑命令的五条工程约束 | `15-tools-parse` |
-| 46 | 时间对齐：五层时钟与因果判定 | 业务说 14:23 慢，你的数据差了 40 秒 | `16-capture` |
-| 47 | 分段二分与决策表 | 五层链路先切哪一刀，砍掉多少、花多久 | `17-bisect` |
-| 48 | 端到端案例：0.3% 的丢包 | 从工单到结案十步走完，带时间预算 | `18-case` |
+| 41 | [症状 → 工具：运维手里的八类工具](./41-symptom-to-tool) | 什么症状该用哪个工具，各自能答、不能答什么 | `15-tools-parse` |
+| 42 | [抓包：tcpdump 与 tshark](./42-capture) | 过滤器怎么写；一个包在链路上丢在哪怎么看 | `16-capture` |
+| 43 | [路径工具：traceroute、mtr、paris](./43-path-tools) | 三个工具的分歧点；ECMP 下路径不连贯 | `15-tools-parse` |
+| 44 | [主机与网卡：ethtool、ss、/proc](./44-host-nic) | 网卡丢包、ring buffer 溢出、offload 造成的假象 | `16-capture` |
+| 45 | [命令输出解析与平台集成](./45-cli-parsing) | textfsm 与模板库；SSH 跑命令的五条工程约束 | `15-tools-parse` |
+| 46 | [时间对齐：五层时钟与因果判定](./46-time-alignment) | 业务说 14:23 慢，你的数据差了 40 秒 | `16-capture` |
+| 47 | [分段二分与决策表](./47-bisect) | 五层链路先切哪一刀，砍掉多少、花多久 | `17-bisect` |
+| 48 | [端到端案例：0.3% 的丢包](./48-case-end-to-end) | 从工单到结案十步走完，带时间预算 | `18-case` |
 
 44 课的价值在于让读者少报几次冤枉的网络故障。`ethtool -S` 里的 `rx_dropped`、`rx_fifo_errors` 是网卡侧丢包，与交换机无关；`ethtool -g` 看 ring buffer（默认 256，万兆下这是常见瓶颈）；offload 开着时，抓包看到的分段与网络上真实的分段不是一回事。很多「网络丢包」工单，最后查到的是 ring buffer 太小。
 
