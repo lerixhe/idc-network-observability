@@ -20,11 +20,16 @@ const stats = computeStats(DOCS_DIR, fileURLToPath(new URL('../../labs', import.
  * 只挂载已有内容的模块，避免侧边栏出现空分组。
  */
 const MODULES = [
-	{ dir: '00-intro', text: '开篇 · 认识这门手艺' },
-	{ dir: '01-collect', text: '第一篇 · 采集' },
-	{ dir: '02-metrics', text: '第二篇 · 指标' },
-	{ dir: '03-read', text: '第三篇 · 判读' },
-	{ dir: '04-locate', text: '第四篇 · 定位' },
+	{ dir: '00-intro', text: '第一部分 · 认识现场' },
+	{ dir: '01-ports', text: '第二部分 · 端口与设备存活' },
+	{ dir: '02-probe', text: '第三部分 · 主动链路探测' },
+	{ dir: '03-snmp', text: '第四部分 · 设备指标采集' },
+	{ dir: '04-flow', text: '第五部分 · 流数据' },
+	{ dir: '05-cmdb', text: '第六部分 · CMDB 与拓扑' },
+	{ dir: '06-platform', text: '第七部分 · 平台工程' },
+	{ dir: '07-alert', text: '第八部分 · 指标与告警' },
+	{ dir: '08-troubleshoot', text: '第九部分 · 排障与定位' },
+	{ dir: '09-case', text: '第十部分 · 实战' },
 	{ dir: 'appendix', text: '附录' },
 ]
 
@@ -56,7 +61,7 @@ const sidebar = [
 		const items = moduleItems(dir)
 		// 模块正文的 index.md 也挂上，骨架期先靠它交代本篇要讲什么
 		const entry = existsSync(join(DOCS_DIR, dir, 'index.md'))
-			? [{ text: `${text} · 总览`, link: `/${dir}/` }]
+			? [{ text: '篇首 · 总览', link: `/${dir}/` }]
 			: []
 		return items.length + entry.length ? { text, collapsed: false, items: [...entry, ...items] } : null
 	}).filter((x): x is NonNullable<typeof x> => x !== null),
@@ -65,7 +70,7 @@ const sidebar = [
 export default defineConfig({
 	title: 'IDC 网络可观测入门',
 	description:
-		'IDC 网络可观测入门：采集、指标、判读与定位。写给后端开发的可观测工程第一课，每个机制配可复现的最小实验。',
+		'IDC 网络可观测入门：端口状态、主动探测、SNMP、流数据、CMDB 与拓扑、平台工程、指标告警、排障定位。写给后端开发的可观测工程第一课，每个机制配可复现的最小实验。',
 	lang: 'zh-CN',
 	base: BASE,
 	srcDir: './docs',
