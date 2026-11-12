@@ -1,0 +1,199 @@
+{
+  "note": "一份报文穿过六跳的 INT 元数据。时间戳是设备本地时钟的纳秒值；int_enabled=false 的跳没有时间戳与队列深度。link_length_m 来自台账，不是 INT 字段。",
+  "traces": [
+    {
+      "id": "t-full",
+      "desc": "六跳全部吐 INT：能定位到跳",
+      "flow": {
+        "src": "10.20.3.11:5021",
+        "dst": "10.20.9.7:8080",
+        "proto": "tcp"
+      },
+      "hops": [
+        {
+          "index": 1,
+          "device": "tor-a3f-01",
+          "role": "leaf",
+          "ingress_port": "Ethernet1/49",
+          "egress_port": "Ethernet1/1",
+          "int_enabled": true,
+          "clock_domain": "ptp",
+          "link_length_m": 0,
+          "egress_bps": 25000000000,
+          "ingress_ts_ns": 1778580720000000640,
+          "egress_ts_ns": 1778580720000003740,
+          "queue_depth_bytes": 4144,
+          "queue_limit_bytes": 8388608
+        },
+        {
+          "index": 2,
+          "device": "spine-01",
+          "role": "spine",
+          "ingress_port": "Ethernet1/1",
+          "egress_port": "Ethernet1/48",
+          "int_enabled": true,
+          "clock_domain": "ptp",
+          "link_length_m": 30,
+          "egress_bps": 100000000000,
+          "ingress_ts_ns": 1778580720000003030,
+          "egress_ts_ns": 1778580720003205130,
+          "queue_depth_bytes": 39600000,
+          "queue_limit_bytes": 67108864
+        },
+        {
+          "index": 3,
+          "device": "dci-border-01",
+          "role": "border",
+          "ingress_port": "Ethernet1/48",
+          "egress_port": "Ethernet1/1",
+          "int_enabled": true,
+          "clock_domain": "ntp",
+          "link_length_m": 6000,
+          "egress_bps": 100000000000,
+          "ingress_ts_ns": 1778580720005545350,
+          "egress_ts_ns": 1778580720005557350,
+          "queue_depth_bytes": 123600,
+          "queue_limit_bytes": 67108864
+        },
+        {
+          "index": 4,
+          "device": "dci-border-02",
+          "role": "border",
+          "ingress_port": "Ethernet1/1",
+          "egress_port": "Ethernet1/48",
+          "int_enabled": true,
+          "clock_domain": "ntp",
+          "link_length_m": 6000,
+          "egress_bps": 100000000000,
+          "ingress_ts_ns": 1778580720005275350,
+          "egress_ts_ns": 1778580720005284050,
+          "queue_depth_bytes": 78400,
+          "queue_limit_bytes": 67108864
+        },
+        {
+          "index": 5,
+          "device": "spine-11",
+          "role": "spine",
+          "ingress_port": "Ethernet1/48",
+          "egress_port": "Ethernet1/1",
+          "int_enabled": true,
+          "clock_domain": "ptp",
+          "link_length_m": 6000,
+          "egress_bps": 100000000000,
+          "ingress_ts_ns": 1778580720003315595,
+          "egress_ts_ns": 1778580720003333595,
+          "queue_depth_bytes": 202000,
+          "queue_limit_bytes": 67108864
+        },
+        {
+          "index": 6,
+          "device": "tor-b7f-02",
+          "role": "leaf",
+          "ingress_port": "Ethernet1/1",
+          "egress_port": "Ethernet1/49",
+          "int_enabled": true,
+          "clock_domain": "ptp",
+          "link_length_m": 30,
+          "egress_bps": 25000000000,
+          "ingress_ts_ns": 1778580720003335110,
+          "egress_ts_ns": 1778580720003337660,
+          "queue_depth_bytes": 1970,
+          "queue_limit_bytes": 8388608
+        }
+      ]
+    },
+    {
+      "id": "t-partial",
+      "desc": "两台 DCI 边界设备固件老，不吐 INT：只能定位到段",
+      "flow": {
+        "src": "10.20.3.11:5021",
+        "dst": "10.20.9.7:8080",
+        "proto": "tcp"
+      },
+      "hops": [
+        {
+          "index": 1,
+          "device": "tor-a3f-01",
+          "role": "leaf",
+          "ingress_port": "Ethernet1/49",
+          "egress_port": "Ethernet1/1",
+          "int_enabled": true,
+          "clock_domain": "ptp",
+          "link_length_m": 0,
+          "egress_bps": 25000000000,
+          "ingress_ts_ns": 1778580720000000640,
+          "egress_ts_ns": 1778580720000003740,
+          "queue_depth_bytes": 4144,
+          "queue_limit_bytes": 8388608
+        },
+        {
+          "index": 2,
+          "device": "spine-01",
+          "role": "spine",
+          "ingress_port": "Ethernet1/1",
+          "egress_port": "Ethernet1/48",
+          "int_enabled": true,
+          "clock_domain": "ptp",
+          "link_length_m": 30,
+          "egress_bps": 100000000000,
+          "ingress_ts_ns": 1778580720000003030,
+          "egress_ts_ns": 1778580720000325130,
+          "queue_depth_bytes": 4040000,
+          "queue_limit_bytes": 67108864
+        },
+        {
+          "index": 3,
+          "device": "dci-border-01",
+          "role": "border",
+          "ingress_port": "Ethernet1/48",
+          "egress_port": "Ethernet1/1",
+          "int_enabled": false,
+          "clock_domain": "ntp",
+          "link_length_m": 6000,
+          "egress_bps": 100000000000
+        },
+        {
+          "index": 4,
+          "device": "dci-border-02",
+          "role": "border",
+          "ingress_port": "Ethernet1/1",
+          "egress_port": "Ethernet1/48",
+          "int_enabled": false,
+          "clock_domain": "ntp",
+          "link_length_m": 6000,
+          "egress_bps": 100000000000
+        },
+        {
+          "index": 5,
+          "device": "spine-11",
+          "role": "spine",
+          "ingress_port": "Ethernet1/48",
+          "egress_port": "Ethernet1/1",
+          "int_enabled": true,
+          "clock_domain": "ptp",
+          "link_length_m": 6000,
+          "egress_bps": 100000000000,
+          "ingress_ts_ns": 1778580720005241595,
+          "egress_ts_ns": 1778580720005307595,
+          "queue_depth_bytes": 792000,
+          "queue_limit_bytes": 67108864
+        },
+        {
+          "index": 6,
+          "device": "tor-b7f-02",
+          "role": "leaf",
+          "ingress_port": "Ethernet1/1",
+          "egress_port": "Ethernet1/49",
+          "int_enabled": true,
+          "clock_domain": "ntp",
+          "link_length_m": 30,
+          "egress_bps": 25000000000,
+          "ingress_ts_ns": 1778580720005608200,
+          "egress_ts_ns": 1778580720005610750,
+          "queue_depth_bytes": 1970,
+          "queue_limit_bytes": 8388608
+        }
+      ]
+    }
+  ]
+}

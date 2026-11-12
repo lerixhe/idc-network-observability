@@ -1,0 +1,141 @@
+{
+  "note": "仿真台架的真值，生产环境拿不到。只用来对账：驻留应当精确，排队是估的，端到端被时钟偏移污染。",
+  "traces": [
+    {
+      "id": "t-full",
+      "e2e_true_ns": 3336750,
+      "clock_offsets_ns": {
+        "tor-a3f-01": 640,
+        "spine-01": -220,
+        "dci-border-01": 2310000,
+        "dci-border-02": 1998000,
+        "spine-11": -455,
+        "tor-b7f-02": 910
+      },
+      "hops": [
+        {
+          "index": 1,
+          "device": "tor-a3f-01",
+          "link_prop_ns": 0,
+          "queue_ns": 1300,
+          "forward_ns": 1800,
+          "resident_ns": 3100,
+          "int_enabled": true
+        },
+        {
+          "index": 2,
+          "device": "spine-01",
+          "link_prop_ns": 150,
+          "queue_ns": 3200000,
+          "forward_ns": 2100,
+          "resident_ns": 3202100,
+          "int_enabled": true
+        },
+        {
+          "index": 3,
+          "device": "dci-border-01",
+          "link_prop_ns": 30000,
+          "queue_ns": 9600,
+          "forward_ns": 2400,
+          "resident_ns": 12000,
+          "int_enabled": true
+        },
+        {
+          "index": 4,
+          "device": "dci-border-02",
+          "link_prop_ns": 30000,
+          "queue_ns": 6400,
+          "forward_ns": 2300,
+          "resident_ns": 8700,
+          "int_enabled": true
+        },
+        {
+          "index": 5,
+          "device": "spine-11",
+          "link_prop_ns": 30000,
+          "queue_ns": 16000,
+          "forward_ns": 2000,
+          "resident_ns": 18000,
+          "int_enabled": true
+        },
+        {
+          "index": 6,
+          "device": "tor-b7f-02",
+          "link_prop_ns": 150,
+          "queue_ns": 650,
+          "forward_ns": 1900,
+          "resident_ns": 2550,
+          "int_enabled": true
+        }
+      ]
+    },
+    {
+      "id": "t-partial",
+      "e2e_true_ns": 5310750,
+      "clock_offsets_ns": {
+        "tor-a3f-01": 640,
+        "spine-01": -220,
+        "dci-border-01": 2310000,
+        "dci-border-02": 1998000,
+        "spine-11": -455,
+        "tor-b7f-02": 300000
+      },
+      "hops": [
+        {
+          "index": 1,
+          "device": "tor-a3f-01",
+          "link_prop_ns": 0,
+          "queue_ns": 1300,
+          "forward_ns": 1800,
+          "resident_ns": 3100,
+          "int_enabled": true
+        },
+        {
+          "index": 2,
+          "device": "spine-01",
+          "link_prop_ns": 150,
+          "queue_ns": 320000,
+          "forward_ns": 2100,
+          "resident_ns": 322100,
+          "int_enabled": true
+        },
+        {
+          "index": 3,
+          "device": "dci-border-01",
+          "link_prop_ns": 30000,
+          "queue_ns": 4780000,
+          "forward_ns": 2400,
+          "resident_ns": 4782400,
+          "int_enabled": false
+        },
+        {
+          "index": 4,
+          "device": "dci-border-02",
+          "link_prop_ns": 30000,
+          "queue_ns": 42000,
+          "forward_ns": 2300,
+          "resident_ns": 44300,
+          "int_enabled": false
+        },
+        {
+          "index": 5,
+          "device": "spine-11",
+          "link_prop_ns": 30000,
+          "queue_ns": 64000,
+          "forward_ns": 2000,
+          "resident_ns": 66000,
+          "int_enabled": true
+        },
+        {
+          "index": 6,
+          "device": "tor-b7f-02",
+          "link_prop_ns": 150,
+          "queue_ns": 650,
+          "forward_ns": 1900,
+          "resident_ns": 2550,
+          "int_enabled": true
+        }
+      ]
+    }
+  ]
+}

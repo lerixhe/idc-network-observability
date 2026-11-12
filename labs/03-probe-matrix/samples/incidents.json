@@ -1,0 +1,42 @@
+{
+  "window_start": "2026-05-12T10:00:00Z",
+  "window_s": 60,
+  "interval_s": 1,
+  "incidents": [
+    {
+        "kind": "host_down",
+        "nodes": [
+            "server-b03-01",
+            "server-b03-02",
+            "server-b03-03"
+        ],
+        "note": "rack-b03 三台服务器整机断电，探针没有上报，别人也探不到它们"
+    },
+    {
+        "kind": "probe_agent_down",
+        "nodes": [
+            "server-a01-02"
+        ],
+        "note": "agent 被重装后没有重启，主机在线、别人探得到它，它自己不发探测"
+    },
+    {
+        "kind": "nic_rx_down",
+        "nodes": [
+            "server-b02-03"
+        ],
+        "note": "接收方向不通：agent 活着能探别人，别人探它全丢"
+    },
+    {
+        "kind": "link_loss",
+        "links": [
+            [
+                "tor-a03",
+                "spine-a1"
+            ]
+        ],
+        "loss": 0.12,
+        "latency_us": 90,
+        "note": "tor-a03 上联 spine-a1 的光纤劣化，12% 丢包"
+    }
+  ]
+}

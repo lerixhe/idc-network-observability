@@ -1,0 +1,38 @@
+[
+  {
+    "name": "tor-a3f-01 → spine-01",
+    "route": "10.20.9.0/24",
+    "hash_salt": 305419896,
+    "base": {
+      "src_ip": "10.20.3.11",
+      "dst_ip": "10.20.9.7",
+      "proto": 6,
+      "dst_port": 5021
+    },
+    "members": [
+      {"id": "m0", "desc": "tor-a3f-01/Ethernet1/1 → spine-01/Ethernet1/1"},
+      {"id": "m1", "desc": "tor-a3f-01/Ethernet1/2 → spine-01/Ethernet1/9"},
+      {"id": "m2", "desc": "tor-a3f-01/Ethernet1/3 → spine-02/Ethernet1/1"},
+      {"id": "m3", "desc": "tor-a3f-01/Ethernet1/4 → spine-02/Ethernet1/9"}
+    ]
+  },
+  {
+    "name": "tor-b7f-02 → spine-21",
+    "route": "10.20.9.0/24",
+    "hash_salt": 3735928559,
+    "base": {
+      "src_ip": "10.20.7.42",
+      "dst_ip": "10.20.9.7",
+      "proto": 17,
+      "dst_port": 7788
+    },
+    "members": [
+      {"id": "m0", "desc": "tor-b7f-02/Ethernet1/1 → spine-21/Ethernet1/1"},
+      {"id": "m1", "desc": "tor-b7f-02/Ethernet1/2 → spine-21/Ethernet1/9"},
+      {"id": "m2", "desc": "tor-b7f-02/Ethernet1/3 → spine-22/Ethernet1/1"},
+      {"id": "m3", "desc": "tor-b7f-02/Ethernet1/4 → spine-22/Ethernet1/9"},
+      {"id": "m4", "desc": "tor-b7f-02/Ethernet1/5 → spine-23/Ethernet1/1"},
+      {"id": "m5", "desc": "tor-b7f-02/Ethernet1/6 → spine-23/Ethernet1/9"}
+    ]
+  }
+]
