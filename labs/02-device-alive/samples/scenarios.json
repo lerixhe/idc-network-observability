@@ -1,0 +1,25 @@
+{
+  "rooms": 4,
+  "hard_down": {
+    "count": 2,
+    "start_at": 0.2,
+    "duration_s": 900
+  },
+  "reboot": {
+    "count": 2,
+    "start_at": 0.35,
+    "duration_s": 240,
+    "jitter_s": 60
+  },
+  "cpu_stall": {
+    "count": 3,
+    "start_at": 0.5,
+    "duration_s": 600,
+    "loss_rate": 0.6
+  },
+  "probe_outage": {
+    "room": 2,
+    "start_at": 0.6,
+    "duration_s": 300
+  }
+}
