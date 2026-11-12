@@ -1,0 +1,21 @@
+{
+  "name": "idc-network-observability-site",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "IDC 网络可观测入门 · 文档站（VitePress）",
+  "scripts": {
+    "dev": "vitepress dev",
+    "start": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "check": "vitepress build --outDir .vitepress/dist-check"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.13"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

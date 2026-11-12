@@ -1,0 +1,27 @@
+# ===== 依赖与构建 =====
+node_modules/
+dist/
+.vitepress/dist/
+.vitepress/cache/
+
+# ===== lab 产物 =====
+labs/**/out/
+labs/**/data/
+*.log
+# 例外：lab 的样本数据是教学素材，必须入库
+!labs/**/samples/*.json
+!labs/**/samples/*.csv
+!labs/**/samples/*.log
+
+# ===== 系统与编辑器 =====
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# 本地写作笔记，只在自己机器上用
+REWRITE-PLAN.md
+
+# Python 缓存
+__pycache__/
+*.pyc

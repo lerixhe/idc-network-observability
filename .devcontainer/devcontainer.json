@@ -1,0 +1,21 @@
+{
+  "name": "IDC Network Observability · Labs",
+  "image": "mcr.microsoft.com/devcontainers/go:1-1.22-bookworm",
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "2gb"
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "postAttachCommand": "echo '环境就绪。先跑：cd labs/00-setup && make run'",
+  "customizations": {
+    "vscode": {
+      "extensions": ["golang.go", "redhat.vscode-yaml"],
+      "settings": {
+        "go.testFlags": ["-count=1"],
+        "go.lintOnSave": "package",
+        "files.trimTrailingWhitespace": true
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}

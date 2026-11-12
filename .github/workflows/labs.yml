@@ -1,0 +1,36 @@
+name: Labs CI
+
+# 每个 lab 跑 go vet + go test。
+# 实验是本项目的交付物之一，代码坏了就是书坏了，所以跟站点构建分开触发、互不阻塞。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'labs/**'
+      - 'scripts/check-labs.sh'
+      - '.github/workflows/labs.yml'
+  pull_request:
+    paths:
+      - 'labs/**'
+      - 'scripts/check-labs.sh'
+      - '.github/workflows/labs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: go vet / go test
+        run: ./scripts/check-labs.sh

@@ -1,0 +1,46 @@
+name: Docs CI
+
+# 内容侧守门员，三件事：
+#   1. 站点能构建 —— 目录改名、frontmatter 写坏，构建期就报出来
+#   2. 站内链接不悬空 —— 改课时文件名时最容易漏
+#   3. labs 与文档的实验编号对得上 —— 文档里引用了不存在的实验，读者会白跑一趟
+#
+# labs 的代码检查在 labs.yml，按路径分开触发，互不阻塞。
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 站内链接体检
+        run: python3 scripts/check-links.py
+
+      - name: 安装依赖
+        working-directory: site
+        run: npm ci
+
+      - name: 构建站点
+        working-directory: site
+        run: npm run build
