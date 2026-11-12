@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {"task_id": "t-err-a1f-02", "metric_id": "if_err_rate.leaf-a1f-02.eth1-2", "target": "leaf-a1f-02/Ethernet1/2", "probe_id": "probe-a-01"},
+    {"task_id": "t-loss-a1f-05", "metric_id": "if_pkt_loss.leaf-a1f-05.eth1-2", "target": "leaf-a1f-05/Ethernet1/2", "probe_id": "probe-a-01"},
+    {"task_id": "t-util-a1f-01", "metric_id": "if_util.leaf-a1f-01.eth1-1", "target": "leaf-a1f-01/Ethernet1/1", "probe_id": "probe-a-02"},
+    {"task_id": "t-err-a2f-03", "metric_id": "if_err_rate.leaf-a2f-03.eth1-2", "target": "leaf-a2f-03/Ethernet1/2", "probe_id": "probe-a-03"},
+    {"task_id": "t-loss-a3f-01", "metric_id": "if_pkt_loss.leaf-a3f-01.eth1-3", "target": "leaf-a3f-01/Ethernet1/3", "probe_id": "probe-a-04"},
+    {"task_id": "t-lat-a3f-02", "metric_id": "rtt_p50.leaf-a3f-02.eth1-1", "target": "leaf-a3f-02/Ethernet1/1", "probe_id": "probe-a-05"},
+    {"task_id": "t-util-b1f-01", "metric_id": "if_util.leaf-b1f-01.eth1-2", "target": "leaf-b1f-01/Ethernet1/2", "probe_id": "probe-b-01"},
+    {"task_id": "t-err-b1f-04", "metric_id": "if_err_rate.leaf-b1f-04.eth1-4", "target": "leaf-b1f-04/Ethernet1/4", "probe_id": "probe-b-02"},
+    {"task_id": "t-loss-b2f-02", "metric_id": "if_pkt_loss.leaf-b2f-02.eth1-2", "target": "leaf-b2f-02/Ethernet1/2", "probe_id": "probe-b-03"},
+    {"task_id": "t-lat-b2f-05", "metric_id": "rtt_p95.leaf-b2f-05.eth1-1", "target": "leaf-b2f-05/Ethernet1/1", "probe_id": "probe-b-04"},
+    {"task_id": "t-util-c1f-01", "metric_id": "if_util.leaf-c1f-01.eth1-2", "target": "leaf-c1f-01/Ethernet1/2", "probe_id": "probe-c-01"},
+    {"task_id": "t-err-c2f-01", "metric_id": "if_err_rate.leaf-c2f-01.eth1-3", "target": "leaf-c2f-01/Ethernet1/3", "probe_id": "probe-c-02"},
+    {"task_id": "t-loss-c3f-01", "metric_id": "if_pkt_loss.leaf-c3f-01.eth1-2", "target": "leaf-c3f-01/Ethernet1/2", "probe_id": "probe-c-03"},
+    {"task_id": "t-util-c3f-02", "metric_id": "if_util.leaf-c3f-02.eth1-1", "target": "leaf-c3f-02/Ethernet1/1", "probe_id": "probe-c-03"}
+  ]
+}

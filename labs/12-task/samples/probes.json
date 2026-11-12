@@ -1,0 +1,17 @@
+{
+  "sites": ["room-a", "room-b", "room-c"],
+  "probes": [
+    {"probe_id": "probe-a-01", "site": "room-a", "capacity": 8, "version": "2.4.0"},
+    {"probe_id": "probe-a-02", "site": "room-a", "capacity": 8, "version": "2.4.0", "offline": [{"from_s": 180, "to_s": 300}]},
+    {"probe_id": "probe-a-03", "site": "room-a", "capacity": 8, "version": "2.3.1"},
+    {"probe_id": "probe-a-04", "site": "room-a", "capacity": 8, "version": "2.4.0"},
+    {"probe_id": "probe-a-05", "site": "room-a", "capacity": 8, "version": "2.4.0"},
+    {"probe_id": "probe-b-01", "site": "room-b", "capacity": 8, "version": "2.4.0"},
+    {"probe_id": "probe-b-02", "site": "room-b", "capacity": 8, "version": "2.3.1", "offline": [{"from_s": 400, "to_s": 480}]},
+    {"probe_id": "probe-b-03", "site": "room-b", "capacity": 8, "version": "2.4.0"},
+    {"probe_id": "probe-b-04", "site": "room-b", "capacity": 8, "version": "2.4.0"},
+    {"probe_id": "probe-c-01", "site": "room-c", "capacity": 8, "version": "2.4.0"},
+    {"probe_id": "probe-c-02", "site": "room-c", "capacity": 8, "version": "2.4.0"},
+    {"probe_id": "probe-c-03", "site": "room-c", "capacity": 4, "version": "2.2.7", "decommissioned_at_s": 300}
+  ]
+}
