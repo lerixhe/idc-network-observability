@@ -18,15 +18,15 @@ SNMP 是最老、最广、最不体面的一层。它慢、它土、它经常是
 
 | 课 | 标题 | 解决的问题 | 实验 |
 |---|---|---|---|
-| 16 | SNMP 解剖：OID、MIB、表遍历 | 一个 OID 是什么，`ifTable` 为什么要遍历 | `06-snmp-walk` |
-| 17 | SNMP 采集工程 | GetBulk 取值、设备 CPU 保护、异常设备隔离 | `06-snmp-walk` |
-| 18 | 计数器语义：回绕、速率、错包 | counter32 每几秒溢出、速率算法三个版本 | `07-counters` |
-| 19 | gNMI 与订阅式采集 | 轮询到订阅的范式变化，dial-in 与 dial-out | `06-snmp-walk` |
+| 16 | [SNMP 解剖：OID、MIB、表遍历](./16-snmp-anatomy) | 一个 OID 是什么，`ifTable` 为什么要遍历 | `06-snmp-walk` |
+| 17 | [SNMP 采集工程](./17-snmp-engineering) | GetBulk 取值、设备 CPU 保护、异常设备隔离 | `06-snmp-walk` |
+| 18 | [计数器语义：回绕、速率、错包](./18-counters) | counter32 每几秒溢出、速率算法三个版本 | `07-counters` |
+| 19 | [gNMI 与订阅式采集](./19-gnmi) | 轮询到订阅的范式变化，dial-in 与 dial-out | `06-snmp-walk` |
 
 ## 配套实验
 
-- `labs/06-snmp-walk`：对着内置 agent 写采集器，含分档限流与失败隔离
-- `labs/07-counters`：计数器与速率，三个版本的速率算法，样本里埋了回绕与清零
+- `labs/06-snmp-walk`：对着内置 agent 按列遍历 `ifTable` + `ifXTable`，四档限流排队不丢，样本含一台响应慢、一台不可达、一台换板后 `ifIndex` 重排
+- `labs/07-counters`：三个版本的速率算法同场对比，样本埋了 1G/10G 回绕、重启清零、漏采、乱序，错包四类归因
 
 ## 读完你应该能
 
