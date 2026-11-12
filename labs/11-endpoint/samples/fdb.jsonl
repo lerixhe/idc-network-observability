@@ -1,0 +1,17 @@
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-a3f-01","vlan":10,"mac":"3c52-8211-0731","port":"Ethernet1/7","type":"dynamic","age_s":120}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-a3f-01","vlan":10,"mac":"d4be-d907-0005","port":"Ethernet1/12","type":"dynamic","age_s":300}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-a3f-01","vlan":10,"mac":"4434-3f07-0009","port":"Ethernet1/3","type":"dynamic","age_s":260}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-a3f-01","vlan":20,"mac":"780c-b804-0051","port":"Port-Channel10","type":"dynamic","age_s":60}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-a3f-01","vlan":20,"mac":"001b-2104-0077","port":"Ethernet1/9","type":"dynamic","age_s":210}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-a3f-01","vlan":20,"mac":"aabb-ccdd-ee01","port":"Ethernet1/15","type":"dynamic","age_s":480}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-a3f-02","vlan":10,"mac":"782b-cb07-0014","port":"Ethernet1/4","type":"dynamic","age_s":90}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-a3f-02","vlan":10,"mac":"8c16-4507-0021","port":"Ethernet1/8","type":"dynamic","age_s":350}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-a3f-02","vlan":20,"mac":"00aa-bb04-0033","port":"Ethernet1/20","type":"dynamic","age_s":700}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-b1f-01","vlan":30,"mac":"0050.56aa.0044","port":"Ethernet1/5","type":"dynamic","age_s":780}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-b1f-01","vlan":30,"mac":"0025.9008.0090","port":"Ethernet1/9","type":"dynamic","age_s":140}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-b1f-01","vlan":30,"mac":"6c92.bf08.0031","port":"Ethernet1/17","type":"dynamic","age_s":60}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-b1f-01","vlan":40,"mac":"8c16.4501.0012","port":"Ethernet1/40","type":"dynamic","age_s":45}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-b1f-01","vlan":40,"mac":"a036.9f01.0020","port":"Ethernet1/22","type":"dynamic","age_s":320}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-b1f-02","vlan":30,"mac":"0050.56aa.0044","port":"Ethernet1/12","type":"dynamic","age_s":96}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-b1f-02","vlan":40,"mac":"000c.2901.0088","port":"Ethernet1/14","type":"dynamic","age_s":200}
+{"ts":"2026-05-12T10:12:00Z","switch":"leaf-b1f-02","vlan":40,"mac":"0025.9001.0066","port":"Ethernet1/6","type":"dynamic","age_s":30}

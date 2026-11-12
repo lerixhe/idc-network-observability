@@ -1,0 +1,4 @@
+{"ts":"2026-05-12T10:00:00Z","device":"tor-a3f-04","port":"Ethernet1/1","mac":"00:1B:21:AA:00:11","vlan":100}
+{"ts":"2026-05-12T10:00:00Z","device":"tor-a3f-01","port":"Ethernet1/49","mac":"00:1b:21:aa:00:11","vlan":100}
+{"ts":"2026-05-12T10:00:00Z","device":"tor-a3f-02","port":"Ethernet1/7","mac":"00:1b:21:aa:00:11","vlan":100}
+{"ts":"2026-05-12T10:00:00Z","device":"tor-a3f-03","port":"Ethernet1/1","mac":"00:1b:21:aa:00:99","vlan":100}

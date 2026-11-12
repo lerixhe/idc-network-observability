@@ -1,0 +1,17 @@
+{"ts":"2026-05-12T10:00:00Z","local_device":"spine-01","local_port":"Ethernet1/1","remote_device":"TOR-A3F-01","remote_port_id":"Eth1/49","remote_port_desc":"Ethernet1/49","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"tor-a3f-01","local_port":"Ethernet1/49","remote_device":"spine-01","remote_port_id":"Gi1/0/1","remote_port_desc":"Ethernet1/1","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"spine-01","local_port":"Ethernet1/5","remote_device":"tor-a3f-02","remote_port_id":"Eth1/5","remote_port_desc":"Ethernet1/5","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"tor-a3f-02","local_port":"Ethernet1/5","remote_device":"spine-02","remote_port_id":"Eth1/5","remote_port_desc":"Ethernet1/5","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"spine-01","local_port":"Ethernet1/6","remote_device":"tor-a3f-02","remote_port_id":"Eth1/6","remote_port_desc":"","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"tor-a3f-02","local_port":"Ethernet1/6","remote_device":"spine-01","remote_port_id":"Gi1/0/6","remote_port_desc":"","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"spine-01","local_port":"Ethernet1/9","remote_device":"spine-02","remote_port_id":"Eth1/9","remote_port_desc":"Ethernet1/9","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"spine-02","local_port":"Ethernet1/9","remote_device":"spine-01","remote_port_id":"Eth1/9","remote_port_desc":"Ethernet1/9","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"spine-01","local_port":"Ethernet1/10","remote_device":"tor-a3f-01","remote_port_id":"Eth-Trunk1","remote_port_desc":"Eth-Trunk1","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"spine-01","local_port":"Ethernet1/11","remote_device":"tor-a3f-01","remote_port_id":"Eth-Trunk1","remote_port_desc":"Eth-Trunk1","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"tor-a3f-01","local_port":"Eth-Trunk1","remote_device":"spine-01","remote_port_id":"Port-Channel10","remote_port_desc":"Port-Channel10","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"spine-01","local_port":"Ethernet1/48","remote_device":"tor-a3f-01","remote_port_id":"48","remote_port_desc":"","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"tor-a3f-01","local_port":"Ethernet1/48","remote_device":"spine-01","remote_port_id":"Eth1/48","remote_port_desc":"Ethernet1/48","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"tor-a3f-01","local_port":"Ethernet1/7","remote_device":"tor-a3f-02","remote_port_id":"Eth1/7","remote_port_desc":"Ethernet1/7","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"tor-a3f-02","local_port":"Ethernet1/7","remote_device":"tor-a3f-01","remote_port_id":"Eth1/7","remote_port_desc":"Ethernet1/7","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"spine-01","local_port":"Ethernet1/2","remote_device":"acc-a3f-09","remote_port_id":"Eth1/1","remote_port_desc":"Ethernet1/1","time_mark":1}
+{"ts":"2026-05-12T10:00:00Z","local_device":"spine-02","local_port":"Ethernet1/11","remote_device":"tor-a3f-02","remote_port_id":"Eth1/11x","remote_port_desc":"","time_mark":1}

@@ -1,0 +1,137 @@
+{
+  "devices": [
+    {
+      "name": "spine-01",
+      "aliases": ["SPINE-01", "spine-01.room1.example.net"],
+      "mgmt_ips": ["10.20.0.11"],
+      "mgmt_mac": "00:1b:21:aa:00:11",
+      "router_id": "10.20.0.11",
+      "vendor": "cisco",
+      "ports": [
+        {"name": "Ethernet1/1", "aliases": ["Eth1/1", "Gi1/0/1"], "if_index": 1},
+        {"name": "Ethernet1/2", "aliases": ["Eth1/2", "Gi1/0/2"], "if_index": 2},
+        {"name": "Ethernet1/5", "aliases": ["Eth1/5", "Gi1/0/5"], "if_index": 5},
+        {"name": "Ethernet1/6", "aliases": ["Eth1/6", "Gi1/0/6"], "if_index": 6},
+        {"name": "Ethernet1/9", "aliases": ["Eth1/9", "Gi1/0/9"], "if_index": 9},
+        {"name": "Ethernet1/10", "aliases": ["Eth1/10", "Gi1/0/10"], "if_index": 10},
+        {"name": "Ethernet1/11", "aliases": ["Eth1/11", "Gi1/0/11"], "if_index": 11},
+        {"name": "Ethernet1/48", "aliases": ["Eth1/48", "Gi1/0/48"], "if_index": 48}
+      ]
+    },
+    {
+      "name": "spine-02",
+      "aliases": ["SPINE-02", "spine-02.room1.example.net"],
+      "mgmt_ips": ["10.20.0.12"],
+      "mgmt_mac": "00:1b:21:aa:00:12",
+      "router_id": "10.20.0.12",
+      "vendor": "cisco",
+      "ports": [
+        {"name": "Ethernet1/5", "aliases": ["Eth1/5", "Gi1/0/5"], "if_index": 5},
+        {"name": "Ethernet1/9", "aliases": ["Eth1/9", "Gi1/0/9"], "if_index": 9},
+        {"name": "Ethernet1/11", "aliases": ["Eth1/11", "Gi1/0/11"], "if_index": 11}
+      ]
+    },
+    {
+      "name": "tor-a3f-01",
+      "aliases": ["TOR-A3F-01", "tor-a3f-01.room3.example.net"],
+      "mgmt_ips": ["10.20.3.11"],
+      "mgmt_mac": "00:1b:21:bb:11:01",
+      "router_id": "10.20.3.11",
+      "vendor": "huawei",
+      "ports": [
+        {"name": "Ethernet1/1", "aliases": ["Eth1/1"], "if_index": 1},
+        {"name": "Ethernet1/7", "aliases": ["Eth1/7"], "if_index": 7},
+        {"name": "Ethernet1/10", "aliases": ["Eth1/10"], "if_index": 10},
+        {"name": "Ethernet1/11", "aliases": ["Eth1/11"], "if_index": 11},
+        {"name": "Ethernet1/48", "aliases": ["Eth1/48"], "if_index": 48},
+        {"name": "Ethernet1/49", "aliases": ["Eth1/49"], "if_index": 49}
+      ]
+    },
+    {
+      "name": "tor-a3f-02",
+      "aliases": ["TOR-A3F-02", "tor-a3f-02.room3.example.net"],
+      "mgmt_ips": ["10.20.3.12"],
+      "mgmt_mac": "00:1b:21:bb:12:01",
+      "router_id": "10.20.3.12",
+      "vendor": "huawei",
+      "ports": [
+        {"name": "Ethernet1/5", "aliases": ["Eth1/5"], "if_index": 5},
+        {"name": "Ethernet1/6", "aliases": ["Eth1/6"], "if_index": 6},
+        {"name": "Ethernet1/7", "aliases": ["Eth1/7"], "if_index": 7}
+      ]
+    },
+    {
+      "name": "tor-a3f-03",
+      "aliases": ["TOR-A3F-03", "tor-a3f-03.room3.example.net"],
+      "mgmt_ips": ["10.20.3.13"],
+      "mgmt_mac": "00:1b:21:bb:13:01",
+      "router_id": "10.20.3.13",
+      "vendor": "huawei",
+      "ports": [
+        {"name": "Ethernet1/1", "aliases": ["Eth1/1"], "if_index": 1},
+        {"name": "Ethernet1/2", "aliases": ["Eth1/2"], "if_index": 2},
+        {"name": "Ethernet1/3", "aliases": ["Eth1/3"], "if_index": 3},
+        {"name": "Ethernet1/4", "aliases": ["Eth1/4"], "if_index": 4},
+        {"name": "Ethernet1/5", "aliases": ["Eth1/5"], "if_index": 5},
+        {"name": "Ethernet1/6", "aliases": ["Eth1/6"], "if_index": 6},
+        {"name": "Ethernet1/7", "aliases": ["Eth1/7"], "if_index": 7},
+        {"name": "Ethernet1/8", "aliases": ["Eth1/8"], "if_index": 8},
+        {"name": "Ethernet1/9", "aliases": ["Eth1/9"], "if_index": 9},
+        {"name": "Ethernet1/10", "aliases": ["Eth1/10"], "if_index": 10},
+        {"name": "Ethernet1/11", "aliases": ["Eth1/11"], "if_index": 11},
+        {"name": "Ethernet1/12", "aliases": ["Eth1/12"], "if_index": 12},
+        {"name": "Ethernet1/13", "aliases": ["Eth1/13"], "if_index": 13},
+        {"name": "Ethernet1/14", "aliases": ["Eth1/14"], "if_index": 14},
+        {"name": "Ethernet1/15", "aliases": ["Eth1/15"], "if_index": 15},
+        {"name": "Ethernet1/16", "aliases": ["Eth1/16"], "if_index": 16},
+        {"name": "Ethernet1/17", "aliases": ["Eth1/17"], "if_index": 17},
+        {"name": "Ethernet1/18", "aliases": ["Eth1/18"], "if_index": 18},
+        {"name": "Ethernet1/19", "aliases": ["Eth1/19"], "if_index": 19},
+        {"name": "Ethernet1/20", "aliases": ["Eth1/20"], "if_index": 20},
+        {"name": "Ethernet1/21", "aliases": ["Eth1/21"], "if_index": 21},
+        {"name": "Ethernet1/22", "aliases": ["Eth1/22"], "if_index": 22},
+        {"name": "Ethernet1/23", "aliases": ["Eth1/23"], "if_index": 23},
+        {"name": "Ethernet1/24", "aliases": ["Eth1/24"], "if_index": 24},
+        {"name": "Ethernet1/25", "aliases": ["Eth1/25"], "if_index": 25},
+        {"name": "Ethernet1/26", "aliases": ["Eth1/26"], "if_index": 26},
+        {"name": "Ethernet1/27", "aliases": ["Eth1/27"], "if_index": 27},
+        {"name": "Ethernet1/28", "aliases": ["Eth1/28"], "if_index": 28},
+        {"name": "Ethernet1/29", "aliases": ["Eth1/29"], "if_index": 29},
+        {"name": "Ethernet1/30", "aliases": ["Eth1/30"], "if_index": 30},
+        {"name": "Ethernet1/31", "aliases": ["Eth1/31"], "if_index": 31},
+        {"name": "Ethernet1/32", "aliases": ["Eth1/32"], "if_index": 32},
+        {"name": "Ethernet1/33", "aliases": ["Eth1/33"], "if_index": 33},
+        {"name": "Ethernet1/34", "aliases": ["Eth1/34"], "if_index": 34},
+        {"name": "Ethernet1/35", "aliases": ["Eth1/35"], "if_index": 35},
+        {"name": "Ethernet1/36", "aliases": ["Eth1/36"], "if_index": 36},
+        {"name": "Ethernet1/37", "aliases": ["Eth1/37"], "if_index": 37},
+        {"name": "Ethernet1/38", "aliases": ["Eth1/38"], "if_index": 38},
+        {"name": "Ethernet1/39", "aliases": ["Eth1/39"], "if_index": 39},
+        {"name": "Ethernet1/40", "aliases": ["Eth1/40"], "if_index": 40},
+        {"name": "Ethernet1/41", "aliases": ["Eth1/41"], "if_index": 41},
+        {"name": "Ethernet1/42", "aliases": ["Eth1/42"], "if_index": 42},
+        {"name": "Ethernet1/43", "aliases": ["Eth1/43"], "if_index": 43},
+        {"name": "Ethernet1/44", "aliases": ["Eth1/44"], "if_index": 44},
+        {"name": "Ethernet1/45", "aliases": ["Eth1/45"], "if_index": 45},
+        {"name": "Ethernet1/46", "aliases": ["Eth1/46"], "if_index": 46},
+        {"name": "Ethernet1/47", "aliases": ["Eth1/47"], "if_index": 47},
+        {"name": "Ethernet1/48", "aliases": ["Eth1/48"], "if_index": 48}
+      ]
+    },
+    {
+      "name": "tor-a3f-04",
+      "aliases": ["TOR-A3F-04", "tor-a3f-04.room3.example.net"],
+      "mgmt_ips": ["10.20.3.14"],
+      "mgmt_mac": "00:1b:21:bb:14:01",
+      "router_id": "10.20.3.14",
+      "vendor": "cisco",
+      "ports": [
+        {"name": "Ethernet1/1", "aliases": ["Eth1/1", "Gi1/0/1"], "if_index": 1}
+      ]
+    }
+  ],
+  "lags": [
+    {"name": "Port-Channel10", "device": "spine-01", "members": ["Ethernet1/10", "Ethernet1/11"]},
+    {"name": "Eth-Trunk1", "device": "tor-a3f-01", "members": ["Ethernet1/10", "Ethernet1/11"]}
+  ]
+}

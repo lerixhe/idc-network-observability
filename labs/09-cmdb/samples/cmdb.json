@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-05-12T08:00:00Z",
+  "devices": [
+    {"hostname": "agg-core-01", "mgmt_ip": "10.20.0.51", "mgmt_mac": "00:1b:21:aa:00:51", "serial": "FDO1802E51", "model": "N9K-C9508", "site": "idc-a", "rack": "B-01", "lifecycle": "active", "owner": "网络组"},
+    {"hostname": "border-01", "mgmt_ip": "10.20.0.1", "mgmt_mac": "00:1b:21:aa:00:01", "serial": "FXS2101B07", "model": "N9K-C93180YC", "site": "idc-a", "rack": "A-01", "lifecycle": "active", "owner": "网络组"},
+    {"hostname": "spine-01", "mgmt_ip": "10.20.0.11", "mgmt_mac": "00:1b:21:aa:00:11", "serial": "FDO2210A01", "model": "N9K-C9336C", "site": "idc-a", "rack": "A-02", "lifecycle": "active", "owner": "网络组"},
+    {"hostname": "spine-02", "mgmt_ip": "10.20.0.12", "mgmt_mac": "00:1b:21:aa:00:12", "serial": "FDO2210A02", "model": "N9K-C9336C", "site": "idc-a", "rack": "A-03", "lifecycle": "active", "owner": "网络组"},
+    {"hostname": "tor-3f-02", "mgmt_ip": "10.20.3.12", "mgmt_mac": "00:1b:21:aa:03:12", "serial": "FDO2312C12", "model": "N9K-C93180YC", "site": "idc-a", "rack": "A3F-02", "lifecycle": "active", "owner": "计算一组"},
+    {"hostname": "tor-3f-07", "mgmt_ip": "10.20.3.17", "mgmt_mac": "00:1b:21:aa:03:17", "serial": "FDO2105D07", "model": "N9K-C93180YC", "site": "idc-a", "rack": "A3F-07", "lifecycle": "active", "owner": "计算三组"},
+    {"hostname": "tor-a3f-01", "mgmt_ip": "10.20.3.11", "mgmt_mac": "00:1b:21:aa:03:11", "serial": "FDO2312C11", "model": "N9K-C93180YC", "site": "idc-a", "rack": "A3F-01", "lifecycle": "active", "owner": "计算一组"},
+    {"hostname": "tor-a3f-02", "mgmt_ip": "10.20.3.12", "mgmt_mac": "00:1b:21:aa:03:12", "serial": "FDO2312C12", "model": "N9K-C93180YC", "site": "idc-a", "rack": "A3F-02", "lifecycle": "active", "owner": "计算一组"},
+    {"hostname": "tor-a3f-03", "mgmt_ip": "10.20.3.13", "mgmt_mac": "00:1b:21:aa:03:13", "serial": "FDO2312C13", "model": "N9K-C93180YC", "site": "idc-a", "rack": "A3F-03", "lifecycle": "active", "owner": "计算二组"},
+    {"hostname": "tor-a3f-06", "mgmt_ip": "10.20.3.16", "mgmt_mac": "00:1b:21:aa:03:16", "serial": "FDO2108D16", "model": "N9K-C93180YC", "site": "idc-a", "rack": "A3F-06", "lifecycle": "active", "owner": "计算二组"}
+  ],
+  "links": [
+    {"device": "border-01", "port": "Ethernet1/1", "if_index": 1, "peer_device": "spine-01", "peer_port": "Ethernet1/49", "declared_at": "2025-06-11"},
+    {"device": "spine-01", "port": "Ethernet1/5", "if_index": 5, "peer_device": "tor-a3f-01", "peer_port": "Ethernet1/6", "declared_at": "2024-11-18"},
+    {"device": "spine-01", "port": "Ethernet1/6", "if_index": 6, "peer_device": "tor-a3f-02", "peer_port": "Ethernet1/1", "declared_at": "2026-03-02"},
+    {"device": "spine-01", "port": "Ethernet1/49", "if_index": 49, "peer_device": "border-01", "peer_port": "Ethernet1/1", "declared_at": "2025-06-11"},
+    {"device": "spine-02", "port": "Ethernet1/5", "if_index": 5, "peer_device": "tor-a3f-01", "peer_port": "Ethernet1/2", "declared_at": "2026-03-02"},
+    {"device": "spine-02", "port": "Ethernet1/7", "if_index": 7, "peer_device": "tor-a3f-03", "peer_port": "Ethernet1/1", "declared_at": "2025-01-20"},
+    {"device": "spine-02", "port": "Ethernet1/8", "if_index": 8, "peer_device": "tor-a3f-06", "peer_port": "Ethernet1/1", "declared_at": "2024-08-05"},
+    {"device": "tor-a3f-01", "port": "Ethernet1/1", "if_index": 1, "peer_device": "spine-01", "peer_port": "Ethernet1/5", "declared_at": "2026-03-02"},
+    {"device": "tor-a3f-01", "port": "Ethernet1/2", "if_index": 2, "peer_device": "spine-02", "peer_port": "Ethernet1/5", "declared_at": "2026-03-02"},
+    {"device": "tor-a3f-02", "port": "Ethernet1/1", "if_index": 1, "peer_device": "spine-01", "peer_port": "Ethernet1/6", "declared_at": "2026-03-02"},
+    {"device": "tor-a3f-02", "port": "Ethernet1/2", "if_index": 2, "peer_device": "spine-02", "peer_port": "Ethernet1/7", "declared_at": "2026-03-02"},
+    {"device": "tor-a3f-03", "port": "Ethernet1/1", "if_index": 1, "peer_device": "spine-02", "peer_port": "Ethernet1/7", "declared_at": "2025-01-20"},
+    {"device": "tor-a3f-06", "port": "Ethernet1/1", "if_index": 1, "peer_device": "spine-02", "peer_port": "Ethernet1/8", "declared_at": "2024-08-05"}
+  ]
+}

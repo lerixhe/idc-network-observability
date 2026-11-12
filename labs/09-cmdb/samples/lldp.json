@@ -1,0 +1,42 @@
+{
+  "collected_at": "2026-05-12T09:12:00Z",
+  "ports": [
+    {"device": "border-01", "port": "Ethernet1/1", "if_index": 1, "mgmt_ip": "10.20.0.1",
+     "neighbors": [{"device": "spine-01", "port": "Ethernet1/49", "mgmt_ip": "10.20.0.11"}]},
+
+    {"device": "spine-01", "port": "Ethernet1/5", "if_index": 5, "mgmt_ip": "10.20.0.11",
+     "neighbors": [{"device": "tor-a3f-01", "port": "Ethernet1/1", "mgmt_ip": "10.20.3.11"}]},
+    {"device": "spine-01", "port": "Ethernet1/6", "if_index": 6, "mgmt_ip": "10.20.0.11",
+     "neighbors": [{"device": "tor-a3f-02", "port": "Ethernet1/1", "mgmt_ip": "10.20.3.12"}]},
+    {"device": "spine-01", "port": "Ethernet1/9", "if_index": 9, "mgmt_ip": "10.20.0.11",
+     "neighbors": [{"device": "tor-a3f-04", "port": "Ethernet1/49", "mgmt_ip": "10.20.3.14"}]},
+    {"device": "spine-01", "port": "Ethernet1/49", "if_index": 49, "mgmt_ip": "10.20.0.11",
+     "neighbors": [{"device": "border-01", "port": "Ethernet1/1", "mgmt_ip": "10.20.0.1"}]},
+
+    {"device": "spine-02", "port": "Ethernet1/5", "if_index": 5, "mgmt_ip": "10.20.0.12",
+     "neighbors": [{"device": "tor-a3f-01", "port": "Ethernet1/2", "mgmt_ip": "10.20.3.11"}]},
+    {"device": "spine-02", "port": "Ethernet1/7", "if_index": 7, "mgmt_ip": "10.20.0.12",
+     "neighbors": [{"device": "tor-a3f-03", "port": "Ethernet1/49", "mgmt_ip": "10.20.3.13"}]},
+    {"device": "spine-02", "port": "Ethernet1/8", "if_index": 8, "mgmt_ip": "10.20.0.12",
+     "neighbors": []},
+
+    {"device": "tor-a3f-01", "port": "Ethernet1/1", "if_index": 1, "mgmt_ip": "10.20.3.11",
+     "neighbors": [{"device": "spine-01", "port": "Ethernet1/5", "mgmt_ip": "10.20.0.11"}]},
+    {"device": "tor-a3f-01", "port": "Ethernet1/2", "if_index": 2, "mgmt_ip": "10.20.3.11",
+     "neighbors": [{"device": "spine-02", "port": "Ethernet1/5", "mgmt_ip": "10.20.0.12"}]},
+
+    {"device": "tor-a3f-02", "port": "Ethernet1/1", "if_index": 51, "mgmt_ip": "10.20.3.12",
+     "neighbors": [{"device": "spine-01", "port": "Ethernet1/6", "mgmt_ip": "10.20.0.11"}]},
+    {"device": "tor-a3f-02", "port": "Ethernet1/2", "if_index": 52, "mgmt_ip": "10.20.3.12",
+     "neighbors": [{"device": "spine-02", "port": "Ethernet1/6", "mgmt_ip": "10.20.0.12"}]},
+
+    {"device": "tor-a3f-03", "port": "Ethernet1/49", "if_index": 49, "mgmt_ip": "10.20.3.13",
+     "neighbors": [{"device": "spine-02", "port": "Ethernet1/7", "mgmt_ip": "10.20.0.12"}]},
+
+    {"device": "tor-a3f-04", "port": "Ethernet1/49", "if_index": 49, "mgmt_ip": "10.20.3.14",
+     "neighbors": [{"device": "spine-01", "port": "Ethernet1/9", "mgmt_ip": "10.20.0.11"}]},
+
+    {"device": "tor-a3f-05", "port": "Ethernet1/49", "if_index": 49, "mgmt_ip": "",
+     "neighbors": []}
+  ]
+}

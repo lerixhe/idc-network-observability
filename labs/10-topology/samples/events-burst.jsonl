@@ -1,0 +1,192 @@
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/1","kind":"link_down","msg":"SNMP trap linkDown ifIndex 1","seq":9001}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/2","kind":"link_down","msg":"SNMP trap linkDown ifIndex 2","seq":9002}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/3","kind":"link_down","msg":"SNMP trap linkDown ifIndex 3","seq":9003}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/4","kind":"link_down","msg":"SNMP trap linkDown ifIndex 4","seq":9004}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/5","kind":"link_down","msg":"SNMP trap linkDown ifIndex 5","seq":9005}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/6","kind":"link_down","msg":"SNMP trap linkDown ifIndex 6","seq":9006}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/7","kind":"link_down","msg":"SNMP trap linkDown ifIndex 7","seq":9007}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/8","kind":"link_down","msg":"SNMP trap linkDown ifIndex 8","seq":9008}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/9","kind":"link_down","msg":"SNMP trap linkDown ifIndex 9","seq":9009}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/10","kind":"link_down","msg":"SNMP trap linkDown ifIndex 10","seq":9010}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/11","kind":"link_down","msg":"SNMP trap linkDown ifIndex 11","seq":9011}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/12","kind":"link_down","msg":"SNMP trap linkDown ifIndex 12","seq":9012}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/13","kind":"link_down","msg":"SNMP trap linkDown ifIndex 13","seq":9013}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/14","kind":"link_down","msg":"SNMP trap linkDown ifIndex 14","seq":9014}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/15","kind":"link_down","msg":"SNMP trap linkDown ifIndex 15","seq":9015}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/16","kind":"link_down","msg":"SNMP trap linkDown ifIndex 16","seq":9016}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/17","kind":"link_down","msg":"SNMP trap linkDown ifIndex 17","seq":9017}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/18","kind":"link_down","msg":"SNMP trap linkDown ifIndex 18","seq":9018}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/19","kind":"link_down","msg":"SNMP trap linkDown ifIndex 19","seq":9019}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/20","kind":"link_down","msg":"SNMP trap linkDown ifIndex 20","seq":9020}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/21","kind":"link_down","msg":"SNMP trap linkDown ifIndex 21","seq":9021}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/22","kind":"link_down","msg":"SNMP trap linkDown ifIndex 22","seq":9022}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/23","kind":"link_down","msg":"SNMP trap linkDown ifIndex 23","seq":9023}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/24","kind":"link_down","msg":"SNMP trap linkDown ifIndex 24","seq":9024}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/25","kind":"link_down","msg":"SNMP trap linkDown ifIndex 25","seq":9025}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/26","kind":"link_down","msg":"SNMP trap linkDown ifIndex 26","seq":9026}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/27","kind":"link_down","msg":"SNMP trap linkDown ifIndex 27","seq":9027}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/28","kind":"link_down","msg":"SNMP trap linkDown ifIndex 28","seq":9028}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/29","kind":"link_down","msg":"SNMP trap linkDown ifIndex 29","seq":9029}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/30","kind":"link_down","msg":"SNMP trap linkDown ifIndex 30","seq":9030}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/31","kind":"link_down","msg":"SNMP trap linkDown ifIndex 31","seq":9031}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/32","kind":"link_down","msg":"SNMP trap linkDown ifIndex 32","seq":9032}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/33","kind":"link_down","msg":"SNMP trap linkDown ifIndex 33","seq":9033}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/34","kind":"link_down","msg":"SNMP trap linkDown ifIndex 34","seq":9034}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/35","kind":"link_down","msg":"SNMP trap linkDown ifIndex 35","seq":9035}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/36","kind":"link_down","msg":"SNMP trap linkDown ifIndex 36","seq":9036}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/37","kind":"link_down","msg":"SNMP trap linkDown ifIndex 37","seq":9037}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/38","kind":"link_down","msg":"SNMP trap linkDown ifIndex 38","seq":9038}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/39","kind":"link_down","msg":"SNMP trap linkDown ifIndex 39","seq":9039}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/40","kind":"link_down","msg":"SNMP trap linkDown ifIndex 40","seq":9040}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/41","kind":"link_down","msg":"SNMP trap linkDown ifIndex 41","seq":9041}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/42","kind":"link_down","msg":"SNMP trap linkDown ifIndex 42","seq":9042}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/43","kind":"link_down","msg":"SNMP trap linkDown ifIndex 43","seq":9043}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/44","kind":"link_down","msg":"SNMP trap linkDown ifIndex 44","seq":9044}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/45","kind":"link_down","msg":"SNMP trap linkDown ifIndex 45","seq":9045}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/46","kind":"link_down","msg":"SNMP trap linkDown ifIndex 46","seq":9046}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/47","kind":"link_down","msg":"SNMP trap linkDown ifIndex 47","seq":9047}
+{"ts":"2026-05-12T10:14:00Z","source":"trap","device":"TOR-A3F-03","port":"Ethernet1/48","kind":"link_down","msg":"SNMP trap linkDown ifIndex 48","seq":9048}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/1","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/1 is down (Link not connected)","seq":45001}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/2","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/2 is down (Link not connected)","seq":45002}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/3","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/3 is down (Link not connected)","seq":45003}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/4","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/4 is down (Link not connected)","seq":45004}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/5","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/5 is down (Link not connected)","seq":45005}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/6","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/6 is down (Link not connected)","seq":45006}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/7","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/7 is down (Link not connected)","seq":45007}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/8","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/8 is down (Link not connected)","seq":45008}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/9","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/9 is down (Link not connected)","seq":45009}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/10","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/10 is down (Link not connected)","seq":45010}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/11","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/11 is down (Link not connected)","seq":45011}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/12","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/12 is down (Link not connected)","seq":45012}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/13","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/13 is down (Link not connected)","seq":45013}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/14","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/14 is down (Link not connected)","seq":45014}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/15","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/15 is down (Link not connected)","seq":45015}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/16","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/16 is down (Link not connected)","seq":45016}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/17","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/17 is down (Link not connected)","seq":45017}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/18","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/18 is down (Link not connected)","seq":45018}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/19","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/19 is down (Link not connected)","seq":45019}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/20","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/20 is down (Link not connected)","seq":45020}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/21","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/21 is down (Link not connected)","seq":45021}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/22","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/22 is down (Link not connected)","seq":45022}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/23","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/23 is down (Link not connected)","seq":45023}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/24","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/24 is down (Link not connected)","seq":45024}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/25","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/25 is down (Link not connected)","seq":45025}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/26","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/26 is down (Link not connected)","seq":45026}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/27","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/27 is down (Link not connected)","seq":45027}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/28","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/28 is down (Link not connected)","seq":45028}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/29","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/29 is down (Link not connected)","seq":45029}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/30","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/30 is down (Link not connected)","seq":45030}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/31","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/31 is down (Link not connected)","seq":45031}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/32","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/32 is down (Link not connected)","seq":45032}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/33","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/33 is down (Link not connected)","seq":45033}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/34","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/34 is down (Link not connected)","seq":45034}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/35","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/35 is down (Link not connected)","seq":45035}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/36","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/36 is down (Link not connected)","seq":45036}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/37","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/37 is down (Link not connected)","seq":45037}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/38","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/38 is down (Link not connected)","seq":45038}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/39","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/39 is down (Link not connected)","seq":45039}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/40","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/40 is down (Link not connected)","seq":45040}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/41","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/41 is down (Link not connected)","seq":45041}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/42","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/42 is down (Link not connected)","seq":45042}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/43","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/43 is down (Link not connected)","seq":45043}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/44","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/44 is down (Link not connected)","seq":45044}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/45","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/45 is down (Link not connected)","seq":45045}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/46","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/46 is down (Link not connected)","seq":45046}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/47","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/47 is down (Link not connected)","seq":45047}
+{"ts":"2026-05-12T10:14:01Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/48","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/48 is down (Link not connected)","seq":45048}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"1","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 1","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"2","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 2","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"3","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 3","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"4","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 4","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"5","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 5","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"6","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 6","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"7","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 7","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"8","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 8","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"9","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 9","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"10","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 10","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"11","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 11","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"12","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 12","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"13","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 13","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"14","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 14","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"15","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 15","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"16","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 16","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"17","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 17","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"18","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 18","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"19","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 19","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"20","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 20","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"21","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 21","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"22","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 22","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"23","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 23","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"24","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 24","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"25","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 25","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"26","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 26","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"27","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 27","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"28","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 28","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"29","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 29","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"30","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 30","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"31","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 31","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"32","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 32","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"33","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 33","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"34","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 34","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"35","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 35","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"36","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 36","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"37","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 37","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"38","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 38","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"39","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 39","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"40","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 40","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"41","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 41","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"42","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 42","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"43","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 43","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"44","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 44","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"45","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 45","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"46","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 46","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"47","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 47","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"counter","device":"10.20.3.13","port":"48","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 48","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/1","kind":"probe_down","msg":"probe to 10.30.1.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/2","kind":"probe_down","msg":"probe to 10.30.2.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/3","kind":"probe_down","msg":"probe to 10.30.3.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/4","kind":"probe_down","msg":"probe to 10.30.4.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/5","kind":"probe_down","msg":"probe to 10.30.5.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/6","kind":"probe_down","msg":"probe to 10.30.6.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/7","kind":"probe_down","msg":"probe to 10.30.7.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/8","kind":"probe_down","msg":"probe to 10.30.8.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/9","kind":"probe_down","msg":"probe to 10.30.9.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/10","kind":"probe_down","msg":"probe to 10.30.10.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/11","kind":"probe_down","msg":"probe to 10.30.11.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/12","kind":"probe_down","msg":"probe to 10.30.12.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/13","kind":"probe_down","msg":"probe to 10.30.13.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/14","kind":"probe_down","msg":"probe to 10.30.14.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/15","kind":"probe_down","msg":"probe to 10.30.15.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/16","kind":"probe_down","msg":"probe to 10.30.16.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/17","kind":"probe_down","msg":"probe to 10.30.17.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/18","kind":"probe_down","msg":"probe to 10.30.18.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/19","kind":"probe_down","msg":"probe to 10.30.19.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/20","kind":"probe_down","msg":"probe to 10.30.20.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/21","kind":"probe_down","msg":"probe to 10.30.21.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/22","kind":"probe_down","msg":"probe to 10.30.22.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/23","kind":"probe_down","msg":"probe to 10.30.23.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/24","kind":"probe_down","msg":"probe to 10.30.24.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/25","kind":"probe_down","msg":"probe to 10.30.25.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/26","kind":"probe_down","msg":"probe to 10.30.26.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/27","kind":"probe_down","msg":"probe to 10.30.27.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/28","kind":"probe_down","msg":"probe to 10.30.28.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/29","kind":"probe_down","msg":"probe to 10.30.29.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/30","kind":"probe_down","msg":"probe to 10.30.30.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/31","kind":"probe_down","msg":"probe to 10.30.31.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/32","kind":"probe_down","msg":"probe to 10.30.32.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/33","kind":"probe_down","msg":"probe to 10.30.33.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/34","kind":"probe_down","msg":"probe to 10.30.34.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/35","kind":"probe_down","msg":"probe to 10.30.35.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/36","kind":"probe_down","msg":"probe to 10.30.36.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/37","kind":"probe_down","msg":"probe to 10.30.37.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/38","kind":"probe_down","msg":"probe to 10.30.38.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/39","kind":"probe_down","msg":"probe to 10.30.39.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/40","kind":"probe_down","msg":"probe to 10.30.40.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/41","kind":"probe_down","msg":"probe to 10.30.41.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/42","kind":"probe_down","msg":"probe to 10.30.42.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/43","kind":"probe_down","msg":"probe to 10.30.43.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/44","kind":"probe_down","msg":"probe to 10.30.44.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/45","kind":"probe_down","msg":"probe to 10.30.45.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/46","kind":"probe_down","msg":"probe to 10.30.46.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/47","kind":"probe_down","msg":"probe to 10.30.47.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"probe","device":"tor-a3f-03","port":"ethernet1/48","kind":"probe_down","msg":"probe to 10.30.48.1 timeout (3/3)","seq":0}

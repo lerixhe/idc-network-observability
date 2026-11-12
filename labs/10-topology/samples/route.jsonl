@@ -1,0 +1,3 @@
+{"ts":"2026-05-12T10:00:00Z","device":"spine-01","local_if":"Port-Channel10","peer_router_id":"10.20.3.11","protocol":"ospf","state":"full"}
+{"ts":"2026-05-12T10:00:00Z","device":"tor-a3f-02","local_if":"Ethernet1/7","peer_router_id":"10.20.0.11","protocol":"ospf","state":"full"}
+{"ts":"2026-05-12T10:00:00Z","device":"tor-a3f-02","local_if":"Loopback0","peer_router_id":"10.20.0.12","protocol":"ospf","state":"full"}

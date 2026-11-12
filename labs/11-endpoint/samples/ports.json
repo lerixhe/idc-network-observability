@@ -1,0 +1,30 @@
+{
+  "devices": [
+    {"name": "gw-core-01", "role": "gateway", "rack": "A-01", "mgmt_ip": "10.0.0.1", "vendor": "huawei", "model": "NE40E-M2K"},
+    {"name": "gw-core-02", "role": "gateway", "rack": "B-01", "mgmt_ip": "10.0.0.2", "vendor": "huawei", "model": "NE40E-M2K"},
+    {"name": "leaf-a3f-01", "role": "leaf", "rack": "A-03", "mgmt_ip": "10.0.0.11", "vendor": "huawei", "model": "CE6881-48S6CQ"},
+    {"name": "leaf-a3f-02", "role": "leaf", "rack": "A-03", "mgmt_ip": "10.0.0.12", "vendor": "huawei", "model": "CE6881-48S6CQ"},
+    {"name": "leaf-b1f-01", "role": "leaf", "rack": "B-01", "mgmt_ip": "10.0.0.21", "vendor": "cisco", "model": "N9K-C93180YC-EX"},
+    {"name": "leaf-b1f-02", "role": "leaf", "rack": "B-01", "mgmt_ip": "10.0.0.22", "vendor": "cisco", "model": "N9K-C93180YC-EX"}
+  ],
+  "ports": [
+    {"device": "leaf-a3f-01", "port": "Ethernet1/1", "rack": "A-03", "u": 20, "desc": "srv-a3f-app01 nic0"},
+    {"device": "leaf-a3f-01", "port": "Ethernet1/2", "rack": "A-03", "u": 20, "desc": "srv-a3f-app01 nic1"},
+    {"device": "leaf-a3f-01", "port": "Ethernet1/3", "rack": "A-03", "u": 11, "desc": "srv-a3f-cache01"},
+    {"device": "leaf-a3f-01", "port": "Ethernet1/7", "rack": "A-03", "u": 12, "desc": "office-ap-3f-07"},
+    {"device": "leaf-a3f-01", "port": "Ethernet1/9", "rack": "A-03", "u": 14, "desc": "srv-a3f-db02"},
+    {"device": "leaf-a3f-01", "port": "Ethernet1/12", "rack": "A-03", "u": 16, "desc": "office-prn-3f-02"},
+    {"device": "leaf-a3f-01", "port": "Ethernet1/15", "rack": "A-03", "u": 18, "desc": "srv-a3f-log01"},
+    {"device": "leaf-a3f-01", "port": "Port-Channel10", "desc": "srv-a3f-app01 bond0", "members": ["Ethernet1/1", "Ethernet1/2"]},
+    {"device": "leaf-a3f-02", "port": "Ethernet1/4", "rack": "A-03", "u": 22, "desc": "office-ap-3f-04"},
+    {"device": "leaf-a3f-02", "port": "Ethernet1/8", "rack": "A-03", "u": 24, "desc": "office-ap-3f-08"},
+    {"device": "leaf-a3f-02", "port": "Ethernet1/20", "rack": "A-03", "u": 26, "desc": "srv-a3f-db03"},
+    {"device": "leaf-b1f-01", "port": "Ethernet1/5", "rack": "B-01", "u": 9, "desc": "vm-host-b1f-01"},
+    {"device": "leaf-b1f-01", "port": "Ethernet1/9", "rack": "B-01", "u": 11, "desc": "srv-b1f-mq01"},
+    {"device": "leaf-b1f-01", "port": "Ethernet1/17", "rack": "B-01", "u": 13, "desc": "srv-b1f-app02"},
+    {"device": "leaf-b1f-01", "port": "Ethernet1/22", "rack": "B-01", "u": 15, "desc": "srv-b1f-app03"},
+    {"device": "leaf-b1f-02", "port": "Ethernet1/6", "rack": "B-01", "u": 3, "desc": "srv-b1f-app04"},
+    {"device": "leaf-b1f-02", "port": "Ethernet1/12", "rack": "B-01", "u": 7, "desc": "vm-host-b1f-02"},
+    {"device": "leaf-b1f-02", "port": "Ethernet1/14", "rack": "B-01", "u": 5, "desc": "srv-b1f-app05"}
+  ]
+}

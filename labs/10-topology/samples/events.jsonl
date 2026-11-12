@@ -1,0 +1,19 @@
+{"ts":"2026-05-12T10:14:03Z","source":"trap","device":"TOR-A3F-01","port":"Ethernet1/48","kind":"link_down","msg":"SNMP trap linkDown ifIndex 48","seq":8801}
+{"ts":"2026-05-12T10:14:04Z","source":"syslog","device":"tor-a3f-01.room3.example.net","port":"Eth1/48","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/48 is down (Link not connected)","seq":41002}
+{"ts":"2026-05-12T10:14:05Z","source":"counter","device":"10.20.3.11","port":"48","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 48","seq":0}
+{"ts":"2026-05-12T10:14:05Z","source":"probe","device":"tor-a3f-01","port":"ethernet1/48","kind":"probe_down","msg":"probe to 10.30.48.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:14:02Z","source":"syslog","device":"tor-a3f-03.room3.example.net","port":"Eth1/1","kind":"IF_DOWN_ADMIN_DISABLED","msg":"%ETHPORT-5-IF_DOWN_ADMIN_DISABLED: Interface Ethernet1/1 is down (Administratively down)","seq":43001}
+{"ts":"2026-05-12T10:15:00Z","source":"trap","device":"TOR-A3F-01","port":"Ethernet1/1","kind":"link_down","msg":"SNMP trap linkDown ifIndex 1","seq":8802}
+{"ts":"2026-05-12T10:15:30Z","source":"syslog","device":"tor-a3f-01.room3.example.net","port":"Eth1/1","kind":"IF_DOWN_ADMIN_DISABLED","msg":"%ETHPORT-5-IF_DOWN_ADMIN_DISABLED: Interface Ethernet1/1 is down (Administratively down)","seq":41010}
+{"ts":"2026-05-12T10:16:00Z","source":"trap","device":"TOR-A3F-02","port":"Ethernet1/5","kind":"link_down","msg":"SNMP trap linkDown ifIndex 5","seq":8803}
+{"ts":"2026-05-12T10:16:02Z","source":"syslog","device":"tor-a3f-02.room3.example.net","port":"Eth1/5","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/5 is down (Link not connected)","seq":42011}
+{"ts":"2026-05-12T10:16:02Z","source":"syslog","device":"tor-a3f-02.room3.example.net","port":"Eth1/5","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface Ethernet1/5 is down (Link not connected)","seq":42012}
+{"ts":"2026-05-12T10:17:00Z","source":"syslog","device":"tor-a3f-02.room3.example.net","port":"Gi1/0/99","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface GigabitEthernet1/0/99 is down","seq":42020}
+{"ts":"2026-05-12T10:17:20Z","source":"trap","device":"tor-a3f-07","port":"Ethernet1/3","kind":"link_down","msg":"SNMP trap linkDown ifIndex 3","seq":8810}
+{"ts":"2026-05-12T10:26:00Z","source":"counter","device":"10.20.3.12","port":"5","kind":"counter_reset","msg":"ifCounterDiscontinuityTime reset on ifIndex 5","seq":0}
+{"ts":"2026-05-12T10:26:02Z","source":"probe","device":"tor-a3f-02","port":"Eth1/5","kind":"probe_down","msg":"probe to 10.30.5.1 timeout (3/3)","seq":0}
+{"ts":"2026-05-12T10:19:00Z","source":"syslog","device":"tor-a3f-04.room3.example.net","port":"Gi1/0/1","kind":"IF_DOWN_LINK_FAILURE","msg":"%ETHPORT-5-IF_DOWN_LINK_FAILURE: Interface GigabitEthernet1/0/1 is down (Link not connected)","seq":44001}
+{"ts":"2026-05-12T10:19:01Z","source":"trap","device":"TOR-A3F-04","port":"Ethernet1/1","kind":"link_down","msg":"SNMP trap linkDown ifIndex 1","seq":8820}
+{"ts":"2026-05-12T10:20:10Z","source":"trap","device":"TOR-A3F-01","port":"Ethernet1/48","kind":"link_down","msg":"SNMP trap linkDown ifIndex 48","seq":8830}
+{"ts":"2026-05-12T10:13:58Z","source":"syslog","device":"tor-a3f-01.room3.example.net","port":"Eth1/7","kind":"IF_UP","msg":"%ETHPORT-5-IF_UP: Interface Ethernet1/7 is up","seq":40099}
+{"ts":"2026-05-12T10:13:59Z","source":"trap","device":"TOR-A3F-01","port":"Ethernet1/7","kind":"link_up","msg":"SNMP trap linkUp ifIndex 7","seq":8799}

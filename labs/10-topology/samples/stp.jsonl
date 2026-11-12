@@ -1,0 +1,4 @@
+{"ts":"2026-05-12T10:00:00Z","device":"spine-01","port":"Ethernet1/9","role":"designated","state":"forwarding","root_bridge":"spine-01"}
+{"ts":"2026-05-12T10:00:00Z","device":"spine-02","port":"Ethernet1/9","role":"alternate","state":"blocking","root_bridge":"spine-01"}
+{"ts":"2026-05-12T10:00:00Z","device":"spine-01","port":"Ethernet1/1","role":"designated","state":"forwarding","root_bridge":"spine-01"}
+{"ts":"2026-05-12T10:00:00Z","device":"tor-a3f-01","port":"Ethernet1/49","role":"root","state":"forwarding","root_bridge":"spine-01"}
