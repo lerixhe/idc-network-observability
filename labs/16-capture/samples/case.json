@@ -1,0 +1,121 @@
+{
+  "case": "labs/16-capture 三端对照：5 个端口，含 3 类陷阱各一例",
+  "window_seconds": 60,
+  "flows": [
+    {
+      "id": "clean: leaf01/eth1 -> spine01 -> leaf07 -> host-a/eth0",
+      "sender": {
+        "port": "leaf01/eth1",
+        "tx_packets": 600000,
+        "tx_bytes": 900000000,
+        "tx_discards": 0,
+        "tx_errors": 0
+      },
+      "path": [
+        { "device": "spine01", "in_packets": 600000, "out_packets": 600000, "in_bytes": 900000000, "out_bytes": 900000000 },
+        { "device": "leaf07", "in_packets": 600000, "out_packets": 600000, "in_bytes": 900000000, "out_bytes": 900000000 }
+      ],
+      "receiver": {
+        "port": "host-a/eth0",
+        "rx_packets": 600000,
+        "rx_bytes": 900000000,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "ethtool": { "ring_rx_entries": 4096, "rx_queue_dropped": 0, "rx_no_buffer_count": 0, "tso": true, "gso": true, "gro": true, "lro": false },
+        "icmp": { "sent": 120, "rate_limited": 0 }
+      }
+    },
+    {
+      "id": "trap-ring-buffer: leaf02/eth1 -> spine01 -> leaf07 -> host-b/eth0",
+      "sender": {
+        "port": "leaf02/eth1",
+        "tx_packets": 480000,
+        "tx_bytes": 720000000,
+        "tx_discards": 0,
+        "tx_errors": 0
+      },
+      "path": [
+        { "device": "spine01", "in_packets": 480000, "out_packets": 480000, "in_bytes": 720000000, "out_bytes": 720000000 },
+        { "device": "leaf07", "in_packets": 480000, "out_packets": 480000, "in_bytes": 720000000, "out_bytes": 720000000 }
+      ],
+      "receiver": {
+        "port": "host-b/eth0",
+        "rx_packets": 470000,
+        "rx_bytes": 705000000,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "ethtool": { "ring_rx_entries": 512, "rx_queue_dropped": 10000, "rx_no_buffer_count": 0, "tso": true, "gso": true, "gro": true, "lro": false },
+        "icmp": { "sent": 80, "rate_limited": 0 }
+      }
+    },
+    {
+      "id": "trap-offload: leaf03/eth1 -> spine01 -> leaf07 -> host-c/eth0",
+      "sender": {
+        "port": "leaf03/eth1",
+        "tx_packets": 200000,
+        "tx_bytes": 300000000,
+        "tx_discards": 0,
+        "tx_errors": 0
+      },
+      "path": [
+        { "device": "spine01", "in_packets": 200000, "out_packets": 200000, "in_bytes": 300000000, "out_bytes": 300000000 },
+        { "device": "leaf07", "in_packets": 200000, "out_packets": 200000, "in_bytes": 300000000, "out_bytes": 300000000 }
+      ],
+      "receiver": {
+        "port": "host-c/eth0",
+        "rx_packets": 133000,
+        "rx_bytes": 299400000,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "ethtool": { "ring_rx_entries": 4096, "rx_queue_dropped": 0, "rx_no_buffer_count": 0, "tso": true, "gso": true, "gro": true, "lro": true },
+        "icmp": { "sent": 64, "rate_limited": 0 }
+      }
+    },
+    {
+      "id": "trap-icmp: leaf04/eth1 -> spine01 -> leaf07 -> host-d/eth0",
+      "sender": {
+        "port": "leaf04/eth1",
+        "tx_packets": 300000,
+        "tx_bytes": 450000000,
+        "tx_discards": 0,
+        "tx_errors": 0
+      },
+      "path": [
+        { "device": "spine01", "in_packets": 300000, "out_packets": 300000, "in_bytes": 450000000, "out_bytes": 450000000 },
+        { "device": "leaf07", "in_packets": 300000, "out_packets": 300000, "in_bytes": 450000000, "out_bytes": 450000000 }
+      ],
+      "receiver": {
+        "port": "host-d/eth0",
+        "rx_packets": 300000,
+        "rx_bytes": 450000000,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "ethtool": { "ring_rx_entries": 4096, "rx_queue_dropped": 0, "rx_no_buffer_count": 0, "tso": false, "gso": false, "gro": false, "lro": false },
+        "icmp": { "sent": 9000, "rate_limited": 42 }
+      }
+    },
+    {
+      "id": "real-loss-device: leaf05/eth1 -> spine01 -> leaf07 -> host-e/eth0",
+      "sender": {
+        "port": "leaf05/eth1",
+        "tx_packets": 900000,
+        "tx_bytes": 1350000000,
+        "tx_discards": 0,
+        "tx_errors": 0
+      },
+      "path": [
+        { "device": "spine01", "in_packets": 900000, "out_packets": 900000, "in_bytes": 1350000000, "out_bytes": 1350000000 },
+        { "device": "leaf07", "in_packets": 900000, "out_packets": 899200, "in_bytes": 1350000000, "out_bytes": 1348800000 }
+      ],
+      "receiver": {
+        "port": "host-e/eth0",
+        "rx_packets": 899200,
+        "rx_bytes": 1348800000,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "ethtool": { "ring_rx_entries": 4096, "rx_queue_dropped": 0, "rx_no_buffer_count": 0, "tso": true, "gso": true, "gro": true, "lro": false },
+        "icmp": { "sent": 150, "rate_limited": 0 }
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "baseline": {
+    "latencyMs": 3.0,
+    "lossPct": 0.02
+  },
+  "perProbeOverheadMs": 5,
+  "segments": [
+    "服务器-接入",
+    "接入-汇聚",
+    "汇聚-核心",
+    "核心-对端",
+    "对端-互联出口"
+  ],
+  "cases": [
+    {
+      "name": "故障在首段",
+      "faultIndex": 0,
+      "samples": [
+        { "latencyMs": 86.4, "lossPct": 0.0, "covered": true, "probeCostMs": 4 },
+        { "latencyMs": 3.2, "lossPct": 0.02, "covered": true, "probeCostMs": 6 },
+        { "latencyMs": 2.8, "lossPct": 0.01, "covered": true, "probeCostMs": 12 },
+        { "latencyMs": 3.1, "lossPct": 0.03, "covered": true, "probeCostMs": 20 },
+        { "latencyMs": 3.4, "lossPct": 0.02, "covered": true, "probeCostMs": 35 }
+      ]
+    },
+    {
+      "name": "故障在中段",
+      "faultIndex": 2,
+      "samples": [
+        { "latencyMs": 2.9, "lossPct": 0.02, "covered": true, "probeCostMs": 4 },
+        { "latencyMs": 3.3, "lossPct": 0.01, "covered": true, "probeCostMs": 6 },
+        { "latencyMs": 152.7, "lossPct": 3.4, "covered": true, "probeCostMs": 12 },
+        { "latencyMs": 3.0, "lossPct": 0.02, "covered": true, "probeCostMs": 20 },
+        { "latencyMs": 3.5, "lossPct": 0.04, "covered": true, "probeCostMs": 35 }
+      ]
+    },
+    {
+      "name": "故障在末段",
+      "faultIndex": 4,
+      "samples": [
+        { "latencyMs": 3.1, "lossPct": 0.02, "covered": true, "probeCostMs": 4 },
+        { "latencyMs": 2.7, "lossPct": 0.01, "covered": true, "probeCostMs": 6 },
+        { "latencyMs": 3.2, "lossPct": 0.03, "covered": true, "probeCostMs": 12 },
+        { "latencyMs": 2.9, "lossPct": 0.02, "covered": true, "probeCostMs": 20 },
+        { "latencyMs": 61.8, "lossPct": 7.9, "covered": true, "probeCostMs": 35 }
+      ]
+    },
+    {
+      "name": "故障在无覆盖段",
+      "faultIndex": 3,
+      "samples": [
+        { "latencyMs": 3.0, "lossPct": 0.02, "covered": true, "probeCostMs": 4 },
+        { "latencyMs": 3.2, "lossPct": 0.01, "covered": true, "probeCostMs": 6 },
+        { "latencyMs": 2.8, "lossPct": 0.02, "covered": true, "probeCostMs": 12 },
+        { "latencyMs": 0.0, "lossPct": 0.0, "covered": false, "probeCostMs": 20 },
+        { "latencyMs": 3.3, "lossPct": 0.03, "covered": true, "probeCostMs": 35 }
+      ]
+    },
+    {
+      "name": "全链路无故障",
+      "faultIndex": -1,
+      "samples": [
+        { "latencyMs": 3.0, "lossPct": 0.02, "covered": true, "probeCostMs": 4 },
+        { "latencyMs": 3.1, "lossPct": 0.02, "covered": true, "probeCostMs": 6 },
+        { "latencyMs": 2.9, "lossPct": 0.01, "covered": true, "probeCostMs": 12 },
+        { "latencyMs": 3.2, "lossPct": 0.03, "covered": true, "probeCostMs": 20 },
+        { "latencyMs": 3.0, "lossPct": 0.02, "covered": true, "probeCostMs": 35 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# 示意数据。按常见设备命令输出的排版特征手写，不是任何厂商的真实输出。
+# 采集侧只做一件事：只读账号跑一条白名单命令，输出原样落盘，不做任何清洗。
+# 列头不带单位，单位由模板声明（见 template.go），这是这个实验的立论基础。
+
+@kind device
+@device sw-c1f-01
+@vendor vendor-c
+@firmware 3.9
+@command show interfaces counters
+@table
+Interface    InOctets      InPkts      InErrors    OutOctets    OutErrors
+Et1          1288412390    10233412    0           331204411    0
+Et2          882143310     7802114     12          771203318    3
+Et3          9931204       88211       0           12044112     0
+
+@firmware 4.2
+@command show interfaces counters detail
+@table
+Interface    InOctets      InPkts      InErrors    InDiscards    InPause    OutPkts    OutErrors    OutDiscards    QueueDrops    Speed    FecUncorrected
+Et1          1299120412    10319311    0           7             0          2904771    0            0              0             10G      0
+Et2          889211004     7864012     12          3             0          6919221    3            11             4             10G      2
+Et3          9981204       88612       0           0             0          993011     0            0              0             1G       0

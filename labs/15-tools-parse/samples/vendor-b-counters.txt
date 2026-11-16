@@ -1,0 +1,14 @@
+# 示意数据。按常见设备命令输出的排版特征手写，不是任何厂商的真实输出。
+# 采集侧只做一件事：只读账号跑一条白名单命令，输出原样落盘，不做任何清洗。
+# 列头不带单位，单位由模板声明（见 template.go），这是这个实验的立论基础。
+
+@kind device
+@device sw-b1f-02
+@vendor vendor-b
+@firmware 4.8(2)
+@command show interface counters
+@table
+Port        InOctets    InUcastPkts    InMcastPkts    InErrors    OutOctets    OutUcastPkts    OutErrors    InDiscards
+Gi1/0/1     1.29G       10.23M         388.1K         0           331.2M       2.88M           0            4
+Gi1/0/2     882.1M      7.80M          301.4K         12          771.2M       6.90M           3            0
+Gi1/0/49    9.93M       88.2K          2.1K           0           12.04M       991.2K          0            0
