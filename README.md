@@ -4,7 +4,7 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/lerixhe/idc-network-observability)
 
-**状态：v1.0 全稿** —— 56 课（00–55）全部成稿，十个部分各配实验，18 个 Go 实验可跑（`00-setup` 到 `17-bisect`），`18/19/20` 待落地。
+**状态：v1.0 全稿** —— 56 课（00–55）全部成稿，十个部分各配实验，21 个 Go 实验全部可跑（`00-setup` 到 `20-probe-security`）。
 站点：<https://lerixhe.github.io/idc-network-observability/> · [English README](README.en.md)
 
 > 系列定位：**第一册**（本书）讲有损网络里的可观测，**第二册**是
@@ -93,9 +93,9 @@ Codespaces 一键即开：上面的徽章点进去，容器里已经装好 Go。
 | v0.4 | 部分五、六成稿（20–29）+ `08`–`11` |
 | v0.5 | 部分七、八成稿（30–40）+ `12`–`14` |
 | v0.6 | 部分九成稿（41–48）+ `15`–`18` |
-| v1.0 | 部分十成稿（49–55）+ 附录，结构冻结，只收纠错 PR（**当前**：56 课全成稿，`18`–`20` 三个实验待落地） |
+| v1.0 | 部分十成稿（49–55）+ 附录，结构冻结，只收纠错 PR（**当前**：56 课全成稿，21 个实验全部落地） |
 
-实验代码已落地 18 个（`00-setup` 到 `17-bisect`），`18-case`、`19-task-increment`、`20-probe-security` 待补。每个 lab 单独一个 module，能离线跑、都留了坑——故意做脏的台账、故意错位的样本，踩一遍比看十遍正文管用。
+实验代码 21 个全部落地（`00-setup` 到 `20-probe-security`）。每个 lab 单独一个 module，能离线跑、都留了坑——故意做脏的台账、故意错位的样本，踩一遍比看十遍正文管用。
 
 ## 许可
 

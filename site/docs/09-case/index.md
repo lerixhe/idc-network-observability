@@ -28,8 +28,8 @@ title: 第十部分 · 实战：一个链路质量平台从 0 到 1（49–55）
 
 ## 配套实验
 
-- `labs/19-task-increment`：任务增量与坏点替换仿真（待落地）
-- `labs/20-probe-security`：下发鉴权与速率自限（待落地）
+- `labs/19-task-increment`：任务增量与坏点替换仿真，含「换三次就停」的震荡抑制
+- `labs/20-probe-security`：HMAC 下发签名与两级令牌桶，含失控自证
 
 第 50–52 课的参数与事故，可直接对照 `labs/12-task`（分发延迟与四个失败模式）与 `labs/03-probe-matrix`（覆盖率与健康评分）的实测输出。
 

@@ -1,0 +1,31 @@
+{
+  "case_id": "INC-2291-0312",
+  "window": {"from": "2026-05-12T14:20:00Z", "to": "2026-05-12T15:10:00Z"},
+  "app": {
+    "service": "order-api",
+    "p99_before_ms": 210,
+    "p99_during_ms": 780,
+    "cpu_pct": 40,
+    "trace_hint": "inventory-svc"
+  },
+  "alarms": [],
+  "paths": [
+    {"from": "app-a3-12", "to": "inv-a3-14", "rack": "A-03", "probes": 20, "loss_pct": 0.0},
+    {"from": "app-a3-12", "to": "inv-a3-15", "rack": "A-03", "probes": 1000, "loss_pct": 0.32},
+    {"from": "app-b1-07", "to": "inv-a3-14", "rack": "A-03", "probes": 1000, "loss_pct": 0.05}
+  ],
+  "switch_ports": [
+    {"device": "tor-a3f-02", "port": "Ethernet1/12", "in_errors": 0, "out_discards": 0, "oper": "up"},
+    {"device": "tor-a3f-02", "port": "Ethernet1/14", "in_errors": 0, "out_discards": 0, "oper": "up"},
+    {"device": "tor-a3f-02", "port": "Ethernet1/15", "in_errors": 0, "out_discards": 0, "oper": "up"}
+  ],
+  "host_nics": [
+    {"host": "inv-a3-14", "rx_fifo_errors": 0, "rx_dropped": 0, "ring_buffer": 256},
+    {"host": "inv-a3-15", "rx_fifo_errors": 41230, "rx_dropped": 41230, "ring_buffer": 256},
+    {"host": "app-a3-12", "rx_fifo_errors": 0, "rx_dropped": 0, "ring_buffer": 4096}
+  ],
+  "changes": [
+    {"at": "2026-05-12T09:10:00Z", "desc": "inv-a3-15 内核升级并重启", "devices": ["inv-a3-15"]}
+  ],
+  "clock_offsets": {"app": 0, "probe": -2, "switch": -41, "host": 0}
+}

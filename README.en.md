@@ -4,8 +4,8 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/lerixhe/idc-network-observability)
 
-**Status: v1.0 full draft** — all 56 lessons (00–55) are written, 18 Go labs run end to end,
-`18`–`20` still pending.
+**Status: v1.0 full draft** — all 56 lessons (00–55) are written, all 21 Go labs run end to end,
+
 Site: <https://lerixhe.github.io/idc-network-observability/> · [中文 README](README.md)
 
 > Series: **Book 1** (this repo) covers observability in lossy IDC networks.
