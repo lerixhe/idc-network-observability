@@ -63,7 +63,9 @@ const sidebar = [
 		const entry = existsSync(join(DOCS_DIR, dir, 'index.md'))
 			? [{ text: '篇首 · 总览', link: `/${dir}/` }]
 			: []
-		return items.length + entry.length ? { text, collapsed: false, items: [...entry, ...items] } : null
+		// collapsed: true —— 五十六项全展开会把首屏铺满一屏半，读者看不到自己站在哪。
+		// VitePress 会自动展开含当前页的那一组（VPSidebarItem 的 watchPostEffect），所以当前篇不用手写展开。
+		return items.length + entry.length ? { text, collapsed: true, items: [...entry, ...items] } : null
 	}).filter((x): x is NonNullable<typeof x> => x !== null),
 ]
 

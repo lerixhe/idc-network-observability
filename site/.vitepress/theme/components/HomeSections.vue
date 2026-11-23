@@ -72,6 +72,27 @@ const modules = [
 	},
 ]
 
+const routes = [
+	{
+		id: '路径一',
+		title: '第一次系统学',
+		desc: '部分二读到部分十，按顺序走。第六部分（CMDB 与拓扑）别跳：它是所有数据的主键来源，跳过之后曲线照样在画，只是画在了错误的对象上。',
+		href: '/00-intro/00-why',
+	},
+	{
+		id: '路径二',
+		title: '手上有具体任务',
+		desc: '比如把端口巡检脚本改成服务：04 → 07 → 16 → 17 → 30 → 33，再回看 23、25。这条线是「设备 → 设备上的数据 → 数据回到平台」的最短链。',
+		href: '/01-ports/04-port-down-causes',
+	},
+	{
+		id: '路径三',
+		title: '救一个已上线的平台',
+		desc: '从 36 口径开始，再到 38 收敛、23 主数据。这三处出问题最普遍，也最容易被当成「监控不准」打发掉。',
+		href: '/07-alert/36-metric-definitions',
+	},
+]
+
 const facts = [
 	{
 		kicker: '写给谁',
@@ -124,6 +145,28 @@ const facts = [
 					</a>
 				</li>
 			</ol>
+		</section>
+
+		<section class="lp-section" aria-labelledby="lp-routes">
+			<header class="lp-head">
+				<p class="lp-kicker">三条读法</p>
+				<h2 id="lp-routes">按你的处境选，不必都从头读</h2>
+				<p class="lp-lede">全书是一条线，但进书的门有三扇。选错门不至于读不懂，只是会在不需要的课上花掉耐心。</p>
+			</header>
+
+			<ul class="lp-labs">
+				<li v-for="r in routes" :key="r.id">
+					<a class="lp-lab" :href="withBase(r.href)">
+						<span class="lp-lab__name">{{ r.id }} · {{ r.title }}</span>
+						<span class="lp-lab__desc">{{ r.desc }}</span>
+					</a>
+				</li>
+			</ul>
+
+			<p class="lp-routes__ref">
+				三条读法的完整说明在
+				<a :href="withBase('/00-intro/03-overview')">03 课 · 全书地图</a> 第六节。
+			</p>
 		</section>
 
 		<section class="lp-section lp-facts" aria-label="本书说明">
@@ -480,5 +523,24 @@ h2 {
 	font-size: var(--sl-text-sm);
 	line-height: 1.7;
 	color: var(--lp-muted);
+}
+
+/* ---------- 三条读法 ---------- */
+
+.lp-routes__ref {
+	margin: 0;
+	font-size: var(--sl-text-xs);
+	line-height: 1.7;
+	color: var(--lp-muted);
+}
+
+.lp-routes__ref a {
+	color: var(--lp-fg);
+	text-decoration-color: var(--lp-border-strong);
+	text-underline-offset: 3px;
+}
+
+.lp-routes__ref a:hover {
+	text-decoration-color: var(--lp-accent);
 }
 </style>
