@@ -155,6 +155,10 @@ C：可以进，值域 87 到几百，量级跟 `service` 同级。基数上限�
 
 下一课把这些指标变成规则：800 条告警怎么收敛到 3 条。
 
+## 配套实验
+
+[`labs/13-pipeline`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/13-pipeline) —— 基数的后果落在存储上。`-only capacity` 那一段把每秒点数与每点字节当参数，序列数翻一倍，成本跟着翻一倍——这就是「每加一维标签，行数乘一次基数」的算术版。
+
 ## 思考
 
 1. 你的平台上序列总数是多少，head 内存占多少？两个数相除得到的每条序列开销，跟 3 KB 差多远？

@@ -165,6 +165,10 @@ TopN 三种失真：小流归零、排名抖动、只看头部。两万条 4 Mbp
 
 下一课处理传输层：UDP 无重传，模板会超时，采不到和没流量在数据里长得一样。
 
+## 配套实验
+
+[`labs/08-flow`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/08-flow) —— 三档采样率下的 TopN 失真：1:1000 时每秒 500 包的小流平均每 2 秒出现一次，榜上永远看不到。
+
 ## 思考
 
 1. 你的 TopN 看板上一次刷新用多长的聚合窗口？把这个窗口和采样率代进 R_min，算出你现在看不见多大的流。

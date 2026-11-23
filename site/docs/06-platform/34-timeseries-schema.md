@@ -240,6 +240,10 @@ C → `dst_ip` 是列不是键，全扫 7 天：172.8 亿 × 7 = 1,210 亿行，
 
 查询侧的账在 API 层：游标分页、四层下钻、超时降级。三件不做，一次 LIKE 加 45 天能花两小时把写入拖死。
 
+## 配套实验
+
+[`labs/13-pipeline`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/13-pipeline) —— 存储段：文件与 SQLite 的方案对比（实验选文件，为了零依赖）、一层一个目录的段文件布局，六条查询逐条算扫多少行。
+
 ## 思考
 
 1. 你的平台里 `metric` 表的主键第一列是什么？它对应的入口，是面板上那个真实的下钻路径吗？

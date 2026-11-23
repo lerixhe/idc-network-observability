@@ -177,6 +177,10 @@ SNMP 覆盖状态与计数，队列深度、完整 MAC 表、BGP 邻居这些藏
 
 下一课换维度：数据都对上了，时间对不对得上。
 
+## 配套实验
+
+[`labs/15-tools-parse`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/15-tools-parse) —— 列头驱动、模板版本号、单位漂移、未知列进丢弃清单。固件升级后列变多、单位从 bytes 改成 packets 的那份样本不崩。
+
 ## 思考
 
 1. 你平台的 CLI 白名单按命令前缀判断还是按完整串判断？`| redirect` 能不能穿过去？

@@ -153,6 +153,10 @@ C → 第 5 行。先要负载均衡的后端状态与摘除计数，不是先 p
 
 下一课停在抓包那一行：过滤器怎么设计，以及一个包到底丢在哪一段。
 
+## 配套实验
+
+[`labs/15-tools-parse`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/15-tools-parse) —— 八类工具的产物怎么变成结构化数据：三厂商命令输出解析 + mtr 判读。
+
 ## 思考
 
 1. 你现在能直接调用的工具，按成本排前三位是哪三个？从第四位起，每次要多花多少时间、找几个人？

@@ -216,6 +216,10 @@ TTL 与降采样是同一个决定的两面：TTL 说留多久，降采样说留
 
 下一课换一个问题：同一个「丢包率」，三个人给你三个数，谁是对的。
 
+## 配套实验
+
+[`labs/13-pipeline`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/13-pipeline) —— 三层保留的容量估算与价格。参数 `-pps`、`-bytes`、`-compress`、`-price` 换成你自己的数，结论跟着变。
+
 ## 思考
 
 1. 你平台上的压缩比是实测的还是厂商给的？拿某一张表的实际落盘除以未压缩量，差多少？

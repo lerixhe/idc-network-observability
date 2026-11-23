@@ -151,6 +151,10 @@ SOC 的检测规则里有一条：单源对多目标的 ICMP 请求超过 200 �
 
 下一课进数据通道：日均 20 亿点怎么存，灾备切换那一刻怎么不重不漏。
 
+## 配套实验
+
+[`labs/20-probe-security`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/20-probe-security) —— HMAC 签名（篡改、过期、重放、轮换）、两级令牌桶含令牌退回、配置错误失控的自救过程。
+
 ## 思考
 
 1. 你的平台里有哪些「假设输入正确」的校验？如果输入错了，第一道能拦住它的闸在哪？

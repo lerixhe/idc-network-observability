@@ -233,6 +233,10 @@ JSON  {"probe_id":"3f02-11","target":"10.2.3.4","proto":"icmp","src_port":33001,
 
 编码 230 字节对 52 字节。可回放靠四个参数，随机的东西要落下痕迹。`labs/00-setup` 是最小版，补四条就能上生产。
 
+## 配套实验
+
+[`labs/00-setup`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/00-setup) —— 生产探针的最小版：并发、超时、可回放、插件化四件事各缺一块，README 的对照表列出从这四条补到生产还差什么。
+
 ## 思考
 
 1. 你的上报里有没有单调钟？只用挂钟算 RTT，NTP 每次校准会在曲线上留下什么形状？

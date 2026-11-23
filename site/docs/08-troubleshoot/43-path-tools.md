@@ -138,6 +138,10 @@ traceroute 每跳换新包，ECMP 下每一行可能来自不同分支，一列�
 
 下一课换一头：交换机、路径、探针全绿，业务还是慢，答案在主机的网卡里。
 
+## 配套实验
+
+[`labs/15-tools-parse`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/15-tools-parse) —— mtr 的五个 verdict：`icmp_rate_limit`、`silent_hop`、`real_loss`、`target_loss`、`ok`，中间跳单独看不作数。
+
 ## 思考
 
 1. 你的路径采集任务在同一分钟窗口里打向同一批设备，这一分钟的 ICMP 回包速率是多少？这台设备的限速值你查得到吗？

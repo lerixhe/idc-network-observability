@@ -135,6 +135,10 @@ SNMP 侧的时序要单独记。设备重启后 ICMP 先回，SNMP agent 后起�
 
 设备存活这条线走到这里就到底了，它只回答「我能不能管到它」。设备在转发什么、转得好不好，得自己发包去测。下一课讲为什么测量本身就是证据。
 
+## 配套实验
+
+[`labs/02-device-alive`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/02-device-alive) —— 同一份仿真的规模面：发现延迟 = (N−1)×P 到 N×P，以及「状态快照」与「上下线事件」两种输出为什么只有一种能开工单。
+
 ## 思考
 
 1. 你那批设备最长的正常重启是多久？这个数谁维护、从哪来、多久校一次？

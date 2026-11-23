@@ -219,6 +219,10 @@ max-repetitions   25
 
 下一课进计数器：那些 32 位的数每 34 秒绕一圈，速率算法得自己处理。
 
+## 配套实验
+
+[`labs/06-snmp-walk`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/06-snmp-walk) —— 四档限流排队不丢：`GetBulk` 大小按设备能力分档，不可达与响应慢分开统计。
+
 ## 思考
 
 1. 你的采集器按全局 QPS 限流还是按设备限流？把最慢那 20 台的窗口长度算出来，看它们有没有被并发挤回去。

@@ -202,6 +202,10 @@ probe-02 的第二种原因：那一格的目标端口被 ACL 封了，或只封
 
 探针不可信，你的数据就只是别人的谈资。下一课把这些要求落成代码。
 
+## 配套实验
+
+[`labs/03-probe-matrix`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/03-probe-matrix) —— 健康评分把「探针侧异常」与「网络侧异常」分开。四个维度、权重与阈值都写死，样本里有一台探针整段关机。
+
 ## 思考
 
 1. 你的平台有没有采探针进程的 `uptime`？如果加了，矩阵上「空行」和「红行」该怎么区分显示？

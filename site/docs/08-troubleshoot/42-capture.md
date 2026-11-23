@@ -155,6 +155,10 @@ C → 两端都收到了包，N = M，故障在主机内部。判据是 `ss -ti`
 
 下一课把「路径」这一类工具摊开：traceroute、mtr、paris 三者的分歧点，以及 ECMP 下那条永远不连贯的路径。
 
+## 配套实验
+
+[`labs/16-capture`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/16-capture) —— 三端对照指认丢包段。样本埋了 ring buffer 溢出、offload 造成的假分段、ICMP 限速三类陷阱。
+
 ## 思考
 
 1. 你手上那次抓包，抓包点覆盖了真实路径吗？如果 ECMP 把它分到了另一条分支，你看到的是什么？

@@ -165,6 +165,10 @@ offload 开着，抓包给的是主机视角的包，包长与包数都不是线
 
 下一课把这堆命令输出变成结构化数据：textfsm 模板与 SSH 跑命令的五条工程约束。
 
+## 配套实验
+
+[`labs/16-capture`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/16-capture) —— 主机侧计数与链路侧计数的对账：`rx_dropped` 涨而链路零丢包，说明问题在网卡。
+
 ## 思考
 
 1. 你那批机器 `ethtool -g` 报的是多少？有多少台还在出厂默认值上？

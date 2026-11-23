@@ -166,6 +166,10 @@ OID 是树上的坐标，前四段定归属，叶子 = 列 + 索引。标量用 
 
 下一课换方向：把 1920 个 varbind 摊到几千台设备上，怎么采才不把设备采死。
 
+## 配套实验
+
+[`labs/06-snmp-walk`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/06-snmp-walk) —— 内置 agent 按列遍历 `ifTable` + `ifXTable`。样本含一台响应慢、一台不可达、一台换板后 `ifIndex` 重排。
+
 ## 思考
 
 1. 你们平台的时序键是 `(device_id, if_index)` 还是 `port_uid`？把换板卡那天的曲线调出来，你靠什么判断它接错了？

@@ -160,6 +160,10 @@ probe_id    承担它的探针
 
 下一课讲这套系统最容易被外部挑战的一面：探针是装在别人机器上的程序，一次配置错误就能把机房出口打满。
 
+## 配套实验
+
+[`labs/19-task-increment`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/19-task-increment) —— 增量比全量少 21.7 倍的下发量、坏点两问四格、换三次就停的震荡抑制。
+
 ## 思考
 
 1. 你的场景里，「一分钟收敛」应该拆成几段？哪一段最可能成为长尾？

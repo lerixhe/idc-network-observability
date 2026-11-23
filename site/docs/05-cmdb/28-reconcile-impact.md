@@ -154,6 +154,10 @@ LLDP：tor-3f-02 ge-0/0/24 → tor-3f-05 ge-0/0/3
 
 下一课换数据形态：设备自己吐出来的那些文本行，怎么变成能查的事件。
 
+## 配套实验
+
+[`labs/09-cmdb`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/09-cmdb) —— 对账产出的三类差异：僵尸、幽灵、错挂。补丁默认 dry-run，人工确认才落库。
+
 ## 思考
 
 1. 你的台账里业务归属是挂在设备上还是挂在服务器上？如果是设备级单值，一台 TOR 接三个业务时你报得出第二个吗？

@@ -259,6 +259,10 @@ C → 共存期不覆盖最长离线时长，加上 401 被重试。防备：共
 
 下一课接住这些配额与标记：数据从十万探针回来，编码、批次、窗口各要怎么对齐。
 
+## 配套实验
+
+[`labs/12-task`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/12-task)、[`labs/20-probe-security`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/20-probe-security) —— 两级令牌桶、单目标与全局配额、超限时丢与排的取舍；鉴权侧在 20 号实验里，含签名与轮换。
+
 ## 思考
 
 1. 单目标配额 10 pps 是从设备侧 CPU 反推的。如果被测目标是一台高性能服务器而不是交换机，这个数该不该改？改了之后探测矩阵要不要重算？

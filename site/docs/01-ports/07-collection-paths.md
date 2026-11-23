@@ -193,6 +193,10 @@ Trap 是 UDP，一发就完。单条丢失概率拆成三项：
 
 下一课换对象：端口讲完了，讲设备本身——ping 不通究竟意味着什么。
 
+## 配套实验
+
+[`labs/01-portstate`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/01-portstate) —— 三条采集通路的对账只留了数据结构：Trap 说 down 而快照说 up、快照说 down 而没收到 Trap，这两种差异的判定是留给读者的二次作业。
+
 ## 思考
 
 1. 你现在的平台里，`ifOperStatus` 有几个写入者？如果有两个，最后一次状态矛盾时你按什么规则裁决？

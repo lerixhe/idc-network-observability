@@ -146,6 +146,10 @@ gNMI 覆盖率 25%（200 台），这 200 台的计数器改走 sample(30s)
 
 下一课换数据类型：从「设备告诉我计数」，到「设备告诉我谁在和谁说话」。
 
+## 配套实验
+
+[`labs/06-snmp-walk`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/06-snmp-walk) —— 只有轮询侧的最小采集器。gNMI 订阅没有模拟器——on-change 丢事件、断连漏采这些行为只能在真机上验，这一课给的是范式对照与工程约束。
+
 ## 思考
 
 1. 你那批设备的 gNMI 覆盖率实际是多少？这个数谁给、能不能逐台验证，还是文档承诺的？

@@ -186,6 +186,10 @@ title: 29 · syslog 与 Trap：把噪声变成事件
 
 下一课进平台工程：这套东西怎么从一堆进程变成一套系统。
 
+## 配套实验
+
+[`labs/10-topology`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/10-topology) —— 四源事件去重：Trap、syslog、计数器归零、探测失败，211 条原始记录压到 12 条，每条带指纹与首末时间。
+
 ## 思考
 
 1. 你的接收端按均值还是峰值配缓冲？230 条/秒那个尖峰来了，第一个丢包的地方是内核 socket 队列还是应用队列？

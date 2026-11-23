@@ -153,6 +153,10 @@ LACP 短超时是 1 秒一次、3 次判死，也就是 3 秒才确认成员失�
 
 下一课往回看一层：端口 down 之前那几周，光模块已经在说话了。
 
+## 配套实验
+
+[`labs/01-portstate`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/01-portstate) —— 同一份样本上的抖动口径：10 分钟窗口、4 次翻转即判 flapping，以及冷启动期 Trap 的剔除（`sysUpTime` 120 秒内一律丢弃）。
+
 ## 思考
 
 1. 你这里的 N 取几？乘上设备台数估一遍每天会产出多少条抖动告警，再看值班的人接不接得住。

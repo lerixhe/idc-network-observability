@@ -172,6 +172,10 @@ leaf-a3-01    spine-b1-01       5      P1
 
 覆盖率 24.4% 意味着四分之三的工单说不出话。下一课讲为什么探到的那四分之一也可能在说谎：ECMP 让探测永远落在一条哈希分支上。
 
+## 配套实验
+
+[`labs/03-probe-matrix`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/03-probe-matrix) —— 探测矩阵的三条规则同场对比：同机架不探、上行必探、层间按权重抽样，输出成本表与覆盖率曲线。
+
 ## 思考
 
 1. 你平台上「应探链路」这个分母是谁定的？它跟 CMDB 里的链路表是同一份数据吗？

@@ -162,6 +162,10 @@ C  业务日志   记录 14:23:10   p99 40 → 180 ms       偏差 −3 s
 
 下一课换手法：对齐之后，五层链路先砍哪一刀。
 
+## 配套实验
+
+[`labs/16-capture`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/16-capture) —— 三端计数器必须在同一时间窗内取差值，窗口对不齐整张表全废。样本里故意留了 40 秒的窗口错位。
+
 ## 思考
 
 1. 你的库里 `ts` 有没有 `ts_source`？没有的话，怎么区分「采集侧打的时间」和「设备自己说的时间」？

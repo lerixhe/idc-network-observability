@@ -157,6 +157,10 @@ GET /v1/evidence/path
 
 下一课解决分母：二十万条链路怎么摊、谁探谁、多久一次。
 
+## 配套实验
+
+[`labs/03-probe-matrix`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/03-probe-matrix) —— 覆盖率直接决定举证能自证到什么程度。样本里链路覆盖率与任务覆盖率两个数分开算，差得很远。
+
 ## 思考
 
 1. 你平台上「覆盖率」这个数是怎么算出来的？分母是机架数、设备数，还是应探链路数？

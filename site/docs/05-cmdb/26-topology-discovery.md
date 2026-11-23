@@ -133,6 +133,10 @@ C → 报法不一致，按成员集合归一：物理层两条（1 口对 1 口
 
 下一课把视角从设备挪到终端：某个 IP 现在接在哪台交换机的哪个口。
 
+## 配套实验
+
+[`labs/09-cmdb`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/09-cmdb)、[`labs/10-topology`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/10-topology) —— 台账侧看差异，拓扑侧看融合：LLDP 为准、STP 校验、MAC 只打问号，冲突不投票。
+
 ## 思考
 
 1. 你平台上的拓扑图，点一条线能说出它的置信度吗？如果不能，运维凭什么信这一条而不信那一条。

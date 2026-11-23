@@ -137,6 +137,10 @@ CMDB：ACC-3F-07 的 Gi1/0/24 在 07 柜，ifAlias 为空
 
 下一课拿自动发现的结果去对台账，看差出来的三类东西怎么处置。
 
+## 配套实验
+
+[`labs/11-endpoint`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/11-endpoint) —— 三套快照上的 IP → MAC → 交换机端口 → 机柜联查。三个陷阱各带标记：MAC 漂移、聚合口只报逻辑口、租约在现网未见。
+
 ## 思考
 
 1. 你这个机房里，ARP 老化时间和采集周期分别是多少？算出你平台「查不到」的时间比例。

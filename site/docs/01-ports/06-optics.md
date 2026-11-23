@@ -169,6 +169,10 @@ DDM：     240 × 400 =  96,000 varbind/轮
 
 下一课换个角度：数据采到了，怎么保证「端口什么时候 down 的」这件事本身是准的。
 
+## 配套实验
+
+[`labs/01-portstate`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/01-portstate) —— 样本里收光 −30.2 dBm 对同型号其余 11 个模块 −6 至 −8 dBm 的横向比对，就是第 06 课三条判据里的第三条。
+
 ## 思考
 
 1. 你手上的设备里，光模块读数的索引是物理实体还是端口？QSFP 转 4×SFP 的分支线上，你的库里有几行记录？

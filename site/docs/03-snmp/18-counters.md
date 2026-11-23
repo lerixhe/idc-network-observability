@@ -209,6 +209,10 @@ mod 2^32 后   = 3,776,798,720     （剥掉 55 圈）
 
 下一课换采集范式：从「我多久问一次」到「变了告诉我」，以及这条路会在哪儿断。
 
+## 配套实验
+
+[`labs/07-counters`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/07-counters) —— 三个版本的速率算法同场对比。样本埋了 1G/10G 回绕、重启清零、漏采、乱序四类数据，错包四类归因。
+
 ## 思考
 
 1. 你平台上 10G 以上的端口，`ifInOctets` 与 `ifHCInOctets` 各占多少？32 位那部分曲线里出现过的下降尖刺能解释吗？
