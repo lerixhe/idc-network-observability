@@ -2,6 +2,7 @@ import { readdirSync, readFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
 import { computeStats } from './stats.mts'
 
@@ -69,7 +70,7 @@ const sidebar = [
 	}).filter((x): x is NonNullable<typeof x> => x !== null),
 ]
 
-export default defineConfig({
+const config = defineConfig({
 	title: 'IDC 网络可观测指南',
 	description:
 		'IDC 网络可观测指南：端口状态、主动探测、SNMP、流数据、CMDB 与拓扑、平台工程、指标告警、排障定位。写给后端开发的可观测工程第一课，每个机制配可复现的最小实验。',
@@ -136,3 +137,5 @@ export default defineConfig({
 		},
 	},
 })
+
+export default withMermaid(config)
