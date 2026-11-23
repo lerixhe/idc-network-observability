@@ -73,7 +73,7 @@ title: 附录
 | 38 | 告警引擎：规则、抑制、关联 | [`14-alert`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/14-alert) |
 | 39 | 基线：阈值为什么必然误报 | [`14-alert`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/14-alert) |
 | 40 | 形态与微突发 | — |
-| 41 | 症状 → 工具：运维手里的八类工具 | [`15-tools-parse`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/15-tools-parse) |
+| 41 | 八类工具：答得了什么，答不了什么 | [`15-tools-parse`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/15-tools-parse) |
 | 42 | 抓包：tcpdump 与 tshark | [`16-capture`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/16-capture) |
 | 43 | 路径工具：traceroute、mtr、paris | [`15-tools-parse`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/15-tools-parse) |
 | 44 | 主机与网卡：ethtool、ss、/proc | [`16-capture`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/16-capture) |
