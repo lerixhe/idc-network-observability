@@ -1,13 +1,5 @@
 <script setup lang="ts">
 /**
- * 首页主体内容：四篇的路径卡片 + 三段说明 + 系列导航。
- * 样式全部以 .lp- 前缀限定作用域，定义在 style.css。
- *
- * 卡片里不写"X 课"这类数字——课时数随时会变，手写必漂移；
- * 要在首页展示规模，读 theme.idcStats（构建期从文件系统数出来）。
- */
-
-/**
  * 首页主体内容：十个部分的路径卡片 + 三段说明 + 系列导航。
  * 样式全部以 .lp- 前缀限定作用域，定义在 style.css。
  *
@@ -74,8 +66,8 @@ const modules = [
 	},
 	{
 		id: '第十部分',
-		title: '实战：从 0 到 1',
-		desc: '一个 IDC 链路质量平台怎么搭起来：约束、决策、代价、事故。实战不讲机制，只讲取舍与后果。',
+		title: '实战：搭一个链路质量平台',
+		desc: '一个 IDC 链路质量平台怎么搭起来：约束、取舍、代价。集群规模翻一倍，哪几笔账要重算。',
 		href: '/09-case/',
 	},
 ]
@@ -84,17 +76,17 @@ const facts = [
 	{
 		kicker: '写给谁',
 		title: '写业务代码的人',
-		body: '会 Go 或 Java、看过监控面板、知道 TCP 三次握手，但没配过交换机。你不需要网络工程师的证件，只需要愿意读 pcap。',
+		body: '会 Go 或 Java，看过监控面板，知道 TCP 三次握手，但没登录过交换机。不需要网络工程师的证件，愿意读 pcap 就够。',
 	},
 	{
 		kicker: '去往哪',
 		title: '可观测平台的研发岗',
-		body: '写采集器、写数据管道、写告警规则、写查询接口的人。网络只是题材，交付物是能跑的系统。',
+		body: '写采集器、写数据管道、写告警规则、写查询接口。网络只是题材，手上最后要有一套能跑的系统。',
 	},
 	{
 		kicker: '怎么读',
-		title: '按系统分篇，不是按工序',
-		body: '端口监测、SNMP 采集、流数据各是一套东西，协议、代码、失败方式全不一样。每部分收一个可复现的最小实验，默认零外部依赖，一台 Mac 就能跑。',
+		title: '按系统分篇',
+		body: '端口监测、SNMP 采集、流数据各是一套东西，协议、代码、失败方式全不一样。每部分结尾一个可复现的小实验，零外部依赖，一台 Mac 就能跑。',
 	},
 ]
 </script>
@@ -104,8 +96,8 @@ const facts = [
 		<section class="lp-section" aria-labelledby="lp-path">
 			<header class="lp-head">
 				<p class="lp-kicker">阅读路径</p>
-				<h2 id="lp-path">九个部分，一条从现场到结论的线</h2>
-				<p class="lp-lede">端口、探测、SNMP、流、拓扑、平台、告警、定位——每个部分一套系统，各自有自己的协议与失败方式。每一部分最后交出一个能跑的东西。</p>
+				<h2 id="lp-path">十个部分，从现场走到结论</h2>
+				<p class="lp-lede">端口、探测、SNMP、流、拓扑、平台、告警、定位，每个部分一套系统，各有各的协议与失败方式。每一部分最后交出一个能跑的东西。</p>
 			</header>
 
 			<ol class="lp-cards">
@@ -146,7 +138,7 @@ const facts = [
 			<header class="lp-head">
 				<p class="lp-kicker">系列</p>
 				<h2 id="lp-series">网络可观测，两册</h2>
-				<p class="lp-lede">本册讲有损网络：丢包是背景噪声，观测的重点是稳定与体验。第二册讲无损智算：丢包就是事故，整套假设要换一遍。</p>
+				<p class="lp-lede">本册讲有损网络：丢包是背景噪声，观测的重点是稳定与体验。第二册进无损域：丢包就是事故，整套假设要重来一遍。</p>
 			</header>
 
 			<ul class="lp-labs">
@@ -330,7 +322,7 @@ h2 {
 
 .lp-facts {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: clamp(1.5rem, 4vw, 2.5rem);
 	padding-block-start: clamp(1.5rem, 4vw, 2.25rem);
 	border-top: 1px solid var(--lp-border);
@@ -340,6 +332,13 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
+}
+
+/* 三项固定三列；窄屏堆成一列，别让第三项单独落到第二行 */
+@media (max-width: 48rem) {
+	.lp-facts {
+		grid-template-columns: 1fr;
+	}
 }
 
 .lp-facts h3 {
