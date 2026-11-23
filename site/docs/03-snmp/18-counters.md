@@ -213,6 +213,8 @@ mod 2^32 后   = 3,776,798,720     （剥掉 55 圈）
 
 [`labs/07-counters`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/07-counters) —— 三个版本的速率算法同场对比。样本埋了 1G/10G 回绕、重启清零、漏采、乱序四类数据，错包四类归因。
 
+想自己写一遍三种速率算法与四类归因的，去 [`labs/exercises/07-counters`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/exercises/07-counters) —— 同一个样本、同一份期望输出，只留一个函数给你填。
+
 ## 思考
 
 1. 你平台上 10G 以上的端口，`ifInOctets` 与 `ifHCInOctets` 各占多少？32 位那部分曲线里出现过的下降尖刺能解释吗？

@@ -1,0 +1,285 @@
+{
+  "series": [
+    {
+      "device": "tor-a3f-01",
+      "if_name": "Ethernet1/49",
+      "if_alias": "to-spine-a1-49",
+      "if_index": 49,
+      "counter": "ifInOctets",
+      "counter_bits": 32,
+      "speed_bps": 1000000000,
+      "note": "1G 口满速 1.00 Gbps，字节计数器 10 秒涨 1.25e9；18.36 秒时撞到 2^32 回绕一次",
+      "samples": [
+        {
+          "t_ms": 0,
+          "value": 2000000000,
+          "sys_uptime_ticks": 123450000
+        },
+        {
+          "t_ms": 10000,
+          "value": 3250000000,
+          "sys_uptime_ticks": 123460000
+        },
+        {
+          "t_ms": 20000,
+          "value": 205032704,
+          "sys_uptime_ticks": 123470000
+        },
+        {
+          "t_ms": 30000,
+          "value": 1455032704,
+          "sys_uptime_ticks": 123480000
+        },
+        {
+          "t_ms": 40000,
+          "value": 2705032704,
+          "sys_uptime_ticks": 123490000
+        }
+      ]
+    },
+    {
+      "device": "tor-a3f-02",
+      "if_name": "Ethernet1/1",
+      "if_alias": "to-spine-a1-1",
+      "if_index": 1,
+      "counter": "ifInOctets",
+      "counter_bits": 32,
+      "speed_bps": 10000000000,
+      "note": "10G 口满速 10 Gbps，字节计数器 1 秒涨 1.25e9，3.44 秒一圈；1 秒采集才跟得上",
+      "samples": [
+        {
+          "t_ms": 0,
+          "value": 1000000000,
+          "sys_uptime_ticks": 987000000
+        },
+        {
+          "t_ms": 1000,
+          "value": 2250000000,
+          "sys_uptime_ticks": 987000100
+        },
+        {
+          "t_ms": 2000,
+          "value": 3500000000,
+          "sys_uptime_ticks": 987000200
+        },
+        {
+          "t_ms": 3000,
+          "value": 455032704,
+          "sys_uptime_ticks": 987000300
+        },
+        {
+          "t_ms": 4000,
+          "value": 1705032704,
+          "sys_uptime_ticks": 987000400
+        },
+        {
+          "t_ms": 5000,
+          "value": 2955032704,
+          "sys_uptime_ticks": 987000500
+        }
+      ]
+    },
+    {
+      "device": "tor-a3f-02",
+      "if_name": "Ethernet1/2",
+      "if_alias": "to-srv-a3f-02-nic1",
+      "if_index": 2,
+      "counter": "ifInOctets",
+      "counter_bits": 32,
+      "speed_bps": 10000000000,
+      "note": "同一个 10G 口，采集周期被错配成 10s：一个周期里走完 2.91 圈，圈数不可判",
+      "samples": [
+        {
+          "t_ms": 0,
+          "value": 1000000000,
+          "sys_uptime_ticks": 987600000
+        },
+        {
+          "t_ms": 10000,
+          "value": 615098112,
+          "sys_uptime_ticks": 987610000
+        },
+        {
+          "t_ms": 20000,
+          "value": 230196224,
+          "sys_uptime_ticks": 987620000
+        }
+      ]
+    },
+    {
+      "device": "spine-01",
+      "if_name": "Ethernet1/1",
+      "if_alias": "to-tor-a3f-01-e1-49",
+      "if_index": 1,
+      "counter": "ifInOctets",
+      "counter_bits": 32,
+      "speed_bps": 10000000000,
+      "note": "27 秒时设备重启：sysUpTime 从 2,002,000 tick 掉回 300 tick，计数器从 40.5 亿掉到 6 亿",
+      "samples": [
+        {
+          "t_ms": 0,
+          "value": 50000000,
+          "sys_uptime_ticks": 2000000
+        },
+        {
+          "t_ms": 10000,
+          "value": 2050000000,
+          "sys_uptime_ticks": 2010000
+        },
+        {
+          "t_ms": 20000,
+          "value": 4050000000,
+          "sys_uptime_ticks": 2020000
+        },
+        {
+          "t_ms": 30000,
+          "value": 600000000,
+          "sys_uptime_ticks": 300
+        },
+        {
+          "t_ms": 40000,
+          "value": 2600000000,
+          "sys_uptime_ticks": 1300
+        }
+      ]
+    },
+    {
+      "device": "leaf-0207",
+      "if_name": "Ethernet1/7",
+      "if_alias": "to-srv-a3f-0207-nic0",
+      "if_index": 7,
+      "counter": "ifInOctets",
+      "counter_bits": 32,
+      "speed_bps": 1000000000,
+      "note": "采集器在 30–50 秒之间掉了三轮，20s 的下一个样本到 60s 才来，实际间隔 40 秒",
+      "samples": [
+        {
+          "t_ms": 0,
+          "value": 0,
+          "sys_uptime_ticks": 500000
+        },
+        {
+          "t_ms": 10000,
+          "value": 250000000,
+          "sys_uptime_ticks": 510000
+        },
+        {
+          "t_ms": 20000,
+          "value": 500000000,
+          "sys_uptime_ticks": 520000
+        },
+        {
+          "t_ms": 60000,
+          "value": 1500000000,
+          "sys_uptime_ticks": 560000
+        },
+        {
+          "t_ms": 70000,
+          "value": 1750000000,
+          "sys_uptime_ticks": 570000
+        }
+      ]
+    },
+    {
+      "device": "leaf-0207",
+      "if_name": "Ethernet1/8",
+      "if_alias": "to-srv-a3f-0207-nic1",
+      "if_index": 8,
+      "counter": "ifInOctets",
+      "counter_bits": 32,
+      "speed_bps": 1000000000,
+      "note": "两个采集批次合并时 40 秒的样本排到了 30 秒前面；按文件顺序算差值会得到负数",
+      "samples": [
+        {
+          "t_ms": 0,
+          "value": 20000000,
+          "sys_uptime_ticks": 700000
+        },
+        {
+          "t_ms": 10000,
+          "value": 645000000,
+          "sys_uptime_ticks": 710000
+        },
+        {
+          "t_ms": 20000,
+          "value": 1270000000,
+          "sys_uptime_ticks": 720000
+        },
+        {
+          "t_ms": 40000,
+          "value": 2520000000,
+          "sys_uptime_ticks": 740000
+        },
+        {
+          "t_ms": 30000,
+          "value": 1895000000,
+          "sys_uptime_ticks": 730000
+        },
+        {
+          "t_ms": 50000,
+          "value": 3145000000,
+          "sys_uptime_ticks": 750000
+        }
+      ]
+    },
+    {
+      "device": "spine-03",
+      "if_name": "Ethernet1/3",
+      "if_alias": "to-tor-a3f-03-e1-1",
+      "if_index": 3,
+      "counter": "ifInOctets",
+      "counter_bits": 32,
+      "speed_bps": 10000000000,
+      "note": "设备连续开机 497 天，sysUpTime 自己回绕到 504 tick，字节计数器一直在涨",
+      "samples": [
+        {
+          "t_ms": 0,
+          "value": 1000000000,
+          "sys_uptime_ticks": 4294965800
+        },
+        {
+          "t_ms": 10000,
+          "value": 2000000000,
+          "sys_uptime_ticks": 4294966800
+        },
+        {
+          "t_ms": 20000,
+          "value": 3000000000,
+          "sys_uptime_ticks": 504
+        }
+      ]
+    },
+    {
+      "device": "spine-02",
+      "if_name": "Ethernet1/2",
+      "if_alias": "to-tor-a3f-02-e1-1",
+      "if_index": 2,
+      "counter": "ifHCInOctets",
+      "counter_bits": 64,
+      "speed_bps": 10000000000,
+      "note": "同一台设备换用 64 位 HC 计数器：满速回绕要 4676 年，回绕这件事从此消失",
+      "samples": [
+        {
+          "t_ms": 0,
+          "value": 12000000000000000,
+          "sys_uptime_ticks": 1500000000
+        },
+        {
+          "t_ms": 10000,
+          "value": 12000008000000000,
+          "sys_uptime_ticks": 1500010000
+        },
+        {
+          "t_ms": 20000,
+          "value": 12000016000000000,
+          "sys_uptime_ticks": 1500020000
+        },
+        {
+          "t_ms": 30000,
+          "value": 12000024000000000,
+          "sys_uptime_ticks": 1500030000
+        }
+      ]
+    }
+  ]
+}

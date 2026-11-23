@@ -1,0 +1,77 @@
+{
+  "series": [
+    {
+      "device": "tor-a3f-01",
+      "if_name": "Ethernet1/49",
+      "wraps": 1,
+      "resets": 0,
+      "uptime_wraps": 0,
+      "gaps": 0,
+      "reorders": 0
+    },
+    {
+      "device": "tor-a3f-02",
+      "if_name": "Ethernet1/1",
+      "wraps": 1,
+      "resets": 0,
+      "uptime_wraps": 0,
+      "gaps": 0,
+      "reorders": 0
+    },
+    {
+      "device": "tor-a3f-02",
+      "if_name": "Ethernet1/2",
+      "wraps": 0,
+      "resets": 0,
+      "uptime_wraps": 0,
+      "gaps": 0,
+      "reorders": 0,
+      "unjudgeable": true
+    },
+    {
+      "device": "spine-01",
+      "if_name": "Ethernet1/1",
+      "wraps": 0,
+      "resets": 1,
+      "uptime_wraps": 0,
+      "gaps": 0,
+      "reorders": 0
+    },
+    {
+      "device": "leaf-0207",
+      "if_name": "Ethernet1/7",
+      "wraps": 0,
+      "resets": 0,
+      "uptime_wraps": 0,
+      "gaps": 1,
+      "reorders": 0
+    },
+    {
+      "device": "leaf-0207",
+      "if_name": "Ethernet1/8",
+      "wraps": 0,
+      "resets": 0,
+      "uptime_wraps": 0,
+      "gaps": 0,
+      "reorders": 2
+    },
+    {
+      "device": "spine-03",
+      "if_name": "Ethernet1/3",
+      "wraps": 0,
+      "resets": 0,
+      "uptime_wraps": 1,
+      "gaps": 0,
+      "reorders": 0
+    },
+    {
+      "device": "spine-02",
+      "if_name": "Ethernet1/2",
+      "wraps": 0,
+      "resets": 0,
+      "uptime_wraps": 0,
+      "gaps": 0,
+      "reorders": 0
+    }
+  ]
+}

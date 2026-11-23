@@ -6,6 +6,7 @@ dist/
 
 # ===== lab 产物 =====
 labs/**/out/
+labs/**/out-answer/
 labs/**/data/
 *.log
 # 例外：lab 的样本数据是教学素材，必须入库

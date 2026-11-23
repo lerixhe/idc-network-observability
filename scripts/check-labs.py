@@ -21,8 +21,9 @@ import re
 import sys
 from pathlib import Path
 
-# labs/00-setup、labs/15-tools-parse 这种两段式编号名
-LAB_REF_RE = re.compile(r"labs/(\d{2}-[a-z0-9][a-z0-9-]*)")
+# labs/00-setup、labs/15-tools-parse 这种两段式编号名；
+# 习题目录也纳入，且与参考实现分属两个命名空间：labs/exercises/01-portstate
+LAB_REF_RE = re.compile(r"labs/(exercises/)?(\d{2}-[a-z0-9][a-z0-9-]*)")
 
 
 def iter_markdown(root: Path):
@@ -31,15 +32,20 @@ def iter_markdown(root: Path):
 
 def check(root: Path, labs: Path) -> list[str]:
     problems: list[str] = []
-    known = {p.name for p in labs.iterdir() if p.is_dir()} if labs.is_dir() else set()
+    def known_dirs(base: Path) -> set[str]:
+        return {p.name for p in base.iterdir() if p.is_dir()} if base.is_dir() else set()
+
+    refs = known_dirs(labs)
+    exes = known_dirs(labs / "exercises")
     for md in iter_markdown(root):
         text = md.read_text(encoding="utf-8")
         for line_no, line in enumerate(text.splitlines(), 1):
-            for name in LAB_REF_RE.findall(line):
-                if name not in known:
-                    problems.append(
-                        f"{md.relative_to(root)}:{line_no} → labs/{name}（目录不存在）"
-                    )
+            for m in LAB_REF_RE.finditer(line):
+                sub, name = m.group(1) or "", m.group(2)
+                pool = exes if sub else refs
+                if name not in pool:
+                    where = f"labs/{sub}{name}"
+                    problems.append(f"{md.relative_to(root)}:{line_no} → {where}（目录不存在）")
     return problems
 
 
@@ -63,8 +69,11 @@ def main() -> int:
             print("  " + p, file=sys.stderr)
         return 1
 
-    names = len({n for md in iter_markdown(args.root) for n in LAB_REF_RE.findall(md.read_text(encoding="utf-8"))})
-    print(f"lab 引用体检通过（{names} 个不同的实验被引用）")
+    refs, exes = set(), set()
+    for md in iter_markdown(args.root):
+        for m in LAB_REF_RE.finditer(md.read_text(encoding="utf-8")):
+            (exes if m.group(1) else refs).add(m.group(2))
+    print(f"lab 引用体检通过（参考实现 {len(refs)} 个、习题 {len(exes)} 个被引用）")
     return 0
 
 

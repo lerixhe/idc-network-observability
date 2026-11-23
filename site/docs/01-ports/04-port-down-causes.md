@@ -157,6 +157,8 @@ admin 与 oper 都是 down，一个是人干的，一个是链路干的。混着
 
 [`labs/01-portstate`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/01-portstate) —— 喂 20 个端口快照与 19 条 Trap，实现六成因判定树，输出成因、归属、下一步。样本埋了 admin shutdown 无光、单向链路两端结论不同、SNMP 代理重启的假抖动。
 
+想自己写一遍判定树的，去 [`labs/exercises/01-portstate`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/exercises/01-portstate) —— 同一个样本、同一份期望输出，只留一个函数给你填。
+
 ## 思考
 
 1. 你平台上 `ifAdminStatus` 与 `ifOperStatus` 是分开存的，还是采集时折叠成了一个布尔？折叠之后还能补回来吗？
