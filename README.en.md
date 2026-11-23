@@ -1,4 +1,4 @@
-# IDC Network Observability · IDC 网络可观测入门
+# IDC Network Observability · IDC 网络可观测指南
 
 > Ports, probes, collection, topology, pipelines, alerts, localization.
 

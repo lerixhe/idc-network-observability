@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: IDC 网络可观测入门
+  name: IDC 网络可观测指南
   tagline: 一条链路坏 0.3%，应用侧的 p99 能翻四倍。这套课从端口、探测、采集讲到拓扑、告警与定位，写给会写代码、没配过交换机的人。
   actions:
     - theme: brand

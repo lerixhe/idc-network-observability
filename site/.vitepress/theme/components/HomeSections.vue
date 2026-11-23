@@ -144,13 +144,13 @@ const facts = [
 			<ul class="lp-labs">
 				<li>
 					<a class="lp-lab" :href="withBase('/00-intro/00-why')">
-						<span class="lp-lab__name">第一册 · IDC 网络可观测入门</span>
+						<span class="lp-lab__name">第一册 · IDC 网络可观测指南</span>
 						<span class="lp-lab__desc">你正在读的这一本。传统 IDC，有损网络，从采集到定位。</span>
 					</a>
 				</li>
 				<li>
 					<a class="lp-lab" href="https://lerixhe.github.io/aidc-observability/">
-						<span class="lp-lab__name">第二册 · 智算网络可观测指南</span>
+						<span class="lp-lab__name">第二册 · 智算网络可观测入门</span>
 						<span class="lp-lab__desc">从有损 IDC 到无损智算：机制、遥测与可运行的实验室。</span>
 					</a>
 				</li>

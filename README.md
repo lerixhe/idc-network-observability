@@ -1,4 +1,4 @@
-# IDC 网络可观测入门 · IDC Network Observability
+# IDC 网络可观测指南 · IDC Network Observability
 
 > 端口、探测、采集、拓扑、管道、告警、定位。
 
@@ -6,7 +6,7 @@
 
 **56 讲（00–55）全部成稿，21 个 Go 实验全部可跑。** 站点：<https://lerixhe.github.io/idc-network-observability/> · [English README](README.en.md)
 
-本仓是系列第一册。第二册 [智算网络可观测指南](https://github.com/lerixhe/aidc-observability/)
+本仓是系列第一册。第二册 [智算网络可观测入门](https://github.com/lerixhe/aidc-observability/)
 往无损智算走：RoCEv2、PFC/ECN 的失败模式、gNMI/INT 遥测、RCA 自动化。两册结构一致，
 先读这一册再读那一册。
 
