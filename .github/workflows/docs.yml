@@ -5,8 +5,9 @@ name: Docs CI
 #   2. 站内链接不悬空 —— 改课时文件名时最容易漏
 #   3. labs 与文档的实验编号对得上 —— 正文引了的 labs/xx 必须真存在
 #   4. 课号不越界、篇首导读不漏课 —— 课号重排过两次，这类引用最容易漂
+#   5. 五个体例小节齐全、判据的参考答案折叠 —— 少一节读者就少一道检验
 #
-# 三个脚本都在 scripts/ 下，各自能单独跑。labs 的代码检查在 labs.yml，按路径分开触发，互不阻塞。
+# 四个脚本都在 scripts/ 下，各自能单独跑。labs 的代码检查在 labs.yml，按路径分开触发，互不阻塞。
 
 on:
   pull_request:
@@ -43,6 +44,9 @@ jobs:
 
       - name: 课号体检
         run: python3 scripts/check-lessons.py
+
+      - name: 体例体检
+        run: python3 scripts/check-lesson-shape.py
 
       - name: 安装依赖
         working-directory: site
