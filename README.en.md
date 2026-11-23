@@ -4,30 +4,30 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/lerixhe/idc-network-observability)
 
-**Status: v1.0 full draft** — all 56 lessons (00–55) are written, all 21 Go labs run end to end,
+**56 lessons (00–55) written, 21 Go labs runnable.** Site: <https://lerixhe.github.io/idc-network-observability/> · [中文 README](README.md)
 
-Site: <https://lerixhe.github.io/idc-network-observability/> · [中文 README](README.md)
+This is Book 1 of the series. Book 2 is [AIDC Observability](https://github.com/lerixhe/aidc-observability/):
+lossless AI fabrics — RoCEv2, PFC/ECN failure modes, gNMI/INT telemetry, RCA automation.
+Both books share one structure; read this one first.
 
-> Series: **Book 1** (this repo) covers observability in lossy IDC networks.
-> **Book 2** is [AIDC Observability](https://github.com/lerixhe/aidc-observability):
-> from lossy IDC to lossless AI fabrics. They were published in reverse order — read this one first.
+The course text is in Chinese. This English README exists so non-Chinese readers can evaluate the
+repo quickly; the labs, their code and their outputs are language-neutral.
 
 ---
 
 ## Who this is for
 
-Backend developers moving into observability platform engineering. You can write Go or Java,
-you have stared at dashboards, you know what a TCP handshake is, and you have never configured
-a switch.
+Backend developers moving into observability platform engineering. You can write Go or Java, you
+have stared at dashboards, you know what a TCP handshake is, and you have never configured a switch.
 
 This book does not teach OSPF path selection or how to log into a device. It teaches turning a
 network site into a system you can **query, alert on, and trace back**: how to collect, how to
-define a metric, how to read a curve, how to narrow a fault to a segment. The deliverable is
-running code.
+define a metric, how to read a curve, how to narrow a fault to a segment. You end up with a set
+of code that runs.
 
 ## The problem
 
-Application monitoring sees symptoms, not the scene. A service's p99 climbs from 210ms to 780ms,
+Application monitoring sees symptoms, not the scene. A service's p99 climbs from 210 ms to 780 ms,
 tracing blames a downstream call, host CPU sits at 40%, the alert list is clean — and the truth is
 0.3% packet loss between two servers in the same rack. Three structural differences:
 
@@ -56,21 +56,30 @@ protocols, code and failure modes.
 | Part | Lessons | Topic | Lab |
 |---|---|---|---|
 | 1 · The site | 00–03 | IDC map, an on-call day, nine systems and three layers | — |
-| 2 · Ports & device liveness | 04–09 | Six causes of down, flapping, optics, three collection paths | `01-portstate` `02-device-alive` |
-| 3 · Active probing | 10–15 | Evidence packs, probe mesh, ECMP, INT, probe trust, writing a probe | `03`–`05` `00-setup` |
+| 2 · Ports & device liveness | 04–09 | Six causes of down, flapping, optics, three collection paths, watching ten thousand devices | `01-portstate` `02-device-alive` |
+| 3 · Active probing | 10–15 | Evidence packs, probe matrix, ECMP, INT, probe trust, writing a probe | `03`–`05` `00-setup` |
 | 4 · Device metrics | 16–19 | OIDs and table walks, CPU protection, counter wrap, gNMI | `06-snmp-walk` `07-counters` |
 | 5 · Flow data | 20–22 | sFlow vs NetFlow, sampling traps, UDP has no retransmit | `08-flow` |
-| 6 · CMDB & topology | 23–29 | Inventory, links, two topology graphs, IP-to-port, reconciliation | `09`–`11` |
+| 6 · CMDB & topology | 23–29 | Inventory, links, two topology graphs, IP-to-port, reconciliation, events | `09`–`11` |
 | 7 · Platform engineering | 30–35 | Two-way control of 100k probes, watermarks, time-series design, cost | `10-task` `11-pipeline` |
-| 8 · Metrics & alerting | 36–40 | Conflicting definitions, cardinality, parent-child suppression, baselines | `12-alert` |
-| 9 · Troubleshooting | 41–48 | Symptom-to-tool, capture, time alignment, bisection, a full case | `15`–`18` |
+| 8 · Metrics & alerting | 36–40 | Conflicting definitions, cardinality, parent-child suppression, baselines, microbursts | `12-alert` |
+| 9 · Troubleshooting | 41–48 | Symptom-to-tool, capture, time alignment, bisection, an end-to-end case | `15`–`18` |
 | 10 · Case study | 49–55 | A link-quality platform from zero: constraints, decisions, costs, incidents | `19` `20` |
 
-The case study is 12% of the book, deliberately not a third. It only adds three things — trade-offs,
-costs, incident chains. Stretch it further and you end up restating mechanics the reader already
-knows.
+## Labs
 
-Every lesson carries one hard checkable outcome. If you cannot state it, the lesson is still an idea.
+21 independent Go modules under `labs/`, from `00-setup` to `20-probe-security`. Go 1.22 and the
+standard library only: no privileges, no network, runs offline.
+
+```bash
+cd labs/01-portstate && make run     # decision tree for six causes of a down port
+cd labs/14-alert && make run         # parent-child suppression: 87 alerts down to 5
+./scripts/check-labs.sh              # go vet + go test, one lab at a time
+```
+
+Every lab's sample data is deliberately dirty: the same fiber judged differently at each end, a
+device at full CPU mistaken for a reboot, one machine with two names and three zombies. Each lab
+README carries a "traps left on purpose" section — step in once, then check the answer.
 
 ## Layout
 
@@ -93,25 +102,18 @@ cd site && npm ci && npm run dev
 cd labs/00-setup && make run && make test
 ```
 
-The course text is in Chinese — this English README exists so non-Chinese readers can evaluate
-the repo quickly; the labs, their code and their outputs are language-neutral.
-
-## Roadmap
-
-| Version | Scope |
-|---|---|
-| v0.1 | Skeleton: site, ten part overviews, part 1 (00–03), `labs/00-setup`, CI (current) |
-| v0.2 | Parts 1–2 written (00–09) + `01-portstate`, `02-device-alive` |
-| v0.3 | Parts 3–4 written (10–19) + `03`–`07` |
-| v0.4 | Parts 5–6 written (20–29) + `08`–`11` |
-| v0.5 | Parts 7–8 written (30–40) + `12`–`14` |
-| v0.6 | Part 9 written (41–48) + `15`–`18` |
-| v1.0 | Part 10 written (49–55) + `19`, `20`, appendix; structure frozen |
-
-Only `00-setup` exists as code today. Every lab is a separate module, must run offline, and ships
-traps on purpose — a deliberately dirty inventory, misaligned samples. Stepping in once beats
-reading the chapter twice.
+The Codespaces badge above leads to a container with Go preinstalled.
 
 ## License
 
 Prose [CC BY-SA 4.0](LICENSE), code [MIT](LICENSE-CODE).
+
+## Contributing
+
+The content is complete; corrections are welcome as issues or pull requests. Name the lesson and
+attach a checkable source:
+
+- Mechanism and protocol claims need a verifiable source (RFC / IEEE standard / paper / vendor docs)
+- Examples use RFC 5737 documentation addresses. Do not submit real device configurations,
+  internal addresses, or unpublished architecture details
+- Local development: `cd site && npm ci && npm run dev`
