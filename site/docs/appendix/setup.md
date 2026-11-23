@@ -11,14 +11,14 @@ cd labs/00-setup
 make run
 ```
 
-期望看到两行东西：终端一张 p50/p99 的表，以及 `out/samples.jsonl`。
+期望看到两样东西：终端一张 p50/p99 的表，以及 `out/samples.jsonl`。
 
 ```text
 目标               总数     成功     丢包率        p50        p99
 self             5      5      0.00%      728µs      1.644ms
 ```
 
-表格数字每次不同（测的是本机回环），格式一致就行。出现这两样，环境就对了。
+表格里的数字每次不同（测的是本机回环），格式一致就行。出现这两样，环境就对了。
 
 ## 二、装什么
 
@@ -27,25 +27,25 @@ self             5      5      0.00%      728µs      1.644ms
 | Go | 1.22+ | `go version` 能跑就行；实验不引第三方库，不需要 `go mod tidy` |
 | make | 任意 | macOS 装 Xcode 命令行工具；Windows 用 WSL，或用 `go run .` 代替 |
 
-可选：`tcpdump`（看第 42 课的 pcap 样本）、`snmpwalk` / `gnmic`（对照真设备输出）。都不是跑实验的前提。
+可选：`tcpdump`（看第 42 课的 pcap 样本）、`snmpwalk`、`gnmic`（对照真设备输出）。这些都不影响跑实验。
 
 Go 安装在 `/usr/local/go` 或 `~/.local/go` 都可以，`PATH` 里能找到即可。
 
 ## 三、目录与 module
 
-```text
-labs/
-├── 00-setup/          go.mod  main.go  Makefile  README.md
-├── 01-portstate/      go.mod  decide.go  samples/  out/
-├── ...
-└── 20-probe-security/
-```
+| 路径 | 内容 |
+|---|---|
+| `labs/go.work` | workspace 清单，把这 21 个 module 串在一起 |
+| `labs/00-setup/` | 第一个探针：`go.mod`、`main.go`、`Makefile`、`README.md`、`samples/`、`out/` |
+| `labs/01-portstate/` | 端口六成因判定树：`go.mod`、`decide.go`、`samples/`、`out/` |
+| `labs/02-device-alive/` 至 `labs/20-probe-security/` | 其余 18 个实验，结构相同，各带一个 `go.mod` |
+| `labs/exercises/` | 四个留白版习题，样本与期望输出照抄原实验 |
 
 21 个目录各带一个 `go.mod`，互不依赖。这意味着：
 
 - 你可以只 clone 一个目录出来跑，不影响别人
-- 每个实验的产物落在自己的 `out/`，不串味
-- 想批量检查全部：在仓库根跑 `bash scripts/check-labs.sh`（逐个 `go vet` + `go test`，约 10 秒）
+- 每个实验的产物落在自己的 `out/`，互不干扰
+- 想批量检查全部：在仓库根跑 `bash scripts/check-labs.sh`（逐个 `go vet` 加 `go test`，约 10 秒）
 
 `labs/go.work` 把这 21 个 module 串成一个 workspace，于是在 `labs/` 根上可以直接 `go test ./01-portstate/...`，不必先 cd 进去。`go test ./...` 在根上不行——Go 的 `./...` 不跨 workspace 里的模块。
 
@@ -60,7 +60,7 @@ labs/
 | `make demo` | 额外打印 README 里引用的那几段（漂移清单、汇总、对比） |
 | `make clean` | 删 `out/` |
 
-`make run` 通常会把结论写成 JSONL，`make demo` 把 JSONL 里不好看的部分翻译成人话。两者输出不一致是正常的：`demo` 是为了让人读的。
+`make run` 通常会把结论写成 JSONL，`make demo` 把 JSONL 里不好看的部分翻译成人能读的文字。两者输出不一致属于正常：`demo` 是给人读的。
 
 ## 五、常见卡点
 
@@ -85,7 +85,7 @@ Windows 原生环境没有 make。两条路：装 WSL；或者直接用 `go run 
 
 `00-setup` 自己起一个本地 listener 做自测，端口是随机的。如果 `make run` 报 `bind: address already in use`，换一次就好——它每次随机取端口，撞上的概率很低但存在。
 
-### 5. 输出里的 `-` 不是 0
+### 5. 输出里的 `-` 不等于 0
 
 好几门实验的表格里有 `-`（`15-tools-parse` 的单位漂移、`07-counters` 的不可得计数）。它表示「这项数据在这份样本里不存在」，与 `0`（量出来的零）是两件事。把两者混成 0，故障口看着像健康的——这是第 41、45 课反复强调的一条。
 
@@ -95,9 +95,9 @@ Windows 原生环境没有 make。两条路：装 WSL；或者直接用 `go run 
 
 ## 六、卡住时看哪
 
-每个实验的 README 有一节「这个实验故意留的坑」，通常 8–11 条。做题卡住时按顺序查三处：
+每个实验的 README 有一节「这个实验故意留下的缺陷」，通常 8–11 条。做题卡住时按顺序查三处：
 
-1. 该实验 README 的「坑」一节，看是不是踩上去了
+1. 该实验 README 的「缺陷」一节，看是不是撞上去了
 2. 该实验的 `expected/` 或 README 的「期望输出」，比对差在哪一行
 3. 对应课次正文的「判据」一节，那里通常有折叠的参考答案
 
@@ -109,5 +109,5 @@ Windows 原生环境没有 make。两条路：装 WSL；或者直接用 `go run 
 
 样本都是纯文本或 JSON，直接改就行。改完的两条建议：
 
-- **先改值，别改结构**。把 `rx_power_dbm` 从 −7 改成 −20，看判定树的哪个叶子变了；把列头去掉一列，看解析器是拒绝还是静默错
+- **先改值，别改结构**。把 `rx_power_dbm` 从 −7 改成 −20，看判定树的哪个叶子变了；把列头去掉一列，看解析器是拒绝还是静默出错
 - **改完跑 `make test`**。每个实验的测试都是按原始样本写的断言，改动会让它们红——红的地方就是那个样本承载的判据，读一遍比看十页正文有用

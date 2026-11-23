@@ -61,12 +61,12 @@ type Result struct {
 
 **UDP 的成功判据是反的。** 它靠 ICMP port unreachable 反推「对端主机活着、端口没开」。RFC 1122 要求主机发，大量设备关掉了：防火墙、负载均衡、云安全组、一部分交换机。这些网段上 UDP 探测永远超时，你拿不到证据说明是包丢了还是设备静默。结论：只在能确认对端会发 port unreachable 的网段用。
 
-**TCP 的时延掺了对端内核时间。** 建连耗时 = 网络 RTT + 对端 SYN 队列排队 + SYN-ACK 的发送调度。空载机器上是几十微秒，SYN 队列有积压时能到几十毫秒。`00-setup` 的 README 第 1 条坑写的就是这个。
+**TCP 的时延掺了对端内核时间。** 建连耗时 = 网络 RTT + 对端 SYN 队列排队 + SYN-ACK 的发送调度。空载机器上是几十微秒，SYN 队列有积压时能到几十毫秒。`00-setup` 的 README 第一条注意事项写的就是这个。
 
 三个系统调用的 `error` 长得一样，含义不一样，判定函数不能共用：
 
 ```go
-// classify 在协议语义这一层分道。上层别用 if err != nil 判失败。
+// classify 在协议语义这一层分道。上层不要用 if err != nil 判定失败。
 func classify(proto string, err error) Status {
 	if err == nil {
 		return StatusOK
@@ -91,7 +91,7 @@ func classify(proto string, err error) Status {
 }
 ```
 
-`StatusUnknown` 必须存在。硬算成丢包，UDP 网段的丢包率会永远偏高，高得稳定，稳定到没人去查。`00-setup` 第 3 条坑同理。
+`StatusUnknown` 必须存在。硬算成丢包，UDP 网段的丢包率会永远偏高，高得稳定，稳定到没人去查。`00-setup` 第三条注意事项同理。
 
 退避只给三种失败：`StatusTimeout` 连续 3 次、`StatusUnreach`、`StatusError`；阶梯 1×、2×、4×，封顶 5 分钟。`StatusRefused` 不退避，对端回了个包。一轮内不重传，重传会把丢包率算小一半。
 
@@ -155,20 +155,35 @@ recv := time.Now()         // ③ syscall 返回之后，用户态
 
 ## 编码与可回放：52 字节，四个参数不能少
 
-同样一个 `Result`，两种编码：
+同样一个 `Result`，两种编码。先看紧凑二进制怎么排：
 
-```text
-JSON  {"probe_id":"3f02-11","target":"10.2.3.4","proto":"icmp","src_port":33001,
-       "seq":123456,"sent_wall_ns":1794466766606123456,"sent_mono_ns":881234567,
-       "rtt_ns":321000,"status":0,"uptime_s":691200,"version":"1.4.2"}
-       ≈ 230 字节
+| 字段 | 字节 | 说明 |
+|---|---|---|
+| `probe_id` | 8 | 定长 8 字节的探针编号 |
+| `target` | 4 | IPv4 地址 |
+| `proto` | 1 | 1 icmp、17 udp、6 tcp |
+| `src_port` | 2 | 源端口 |
+| `seq` | 4 | 序号 |
+| `sent_wall_ns` | 8 | 挂钟纳秒 |
+| `sent_mono_ns` | 8 | 单调钟纳秒 |
+| `rtt_ns` | 4 | 往返时延纳秒 |
+| `status` | 1 | 判定结果 |
+| `uptime_s` | 8 | 进程运行秒数 |
+| `version` | 4 | 版本号 |
+| 合计 | 52 | — |
 
-紧凑二进制  8 probe_id + 4 target(IPv4) + 1 proto + 2 src_port + 4 seq
-          + 8 sent_wall + 8 sent_mono + 4 rtt + 1 status + 8 uptime + 4 version
-          = 52 字节
+同样的字段写成 JSON：
+
+```json
+{"probe_id":"3f02-11","target":"10.2.3.4","proto":"icmp","src_port":33001,"seq":123456,"sent_wall_ns":1794466766606123456,"sent_mono_ns":881234567,"rtt_ns":321000,"status":0,"uptime_s":691200,"version":"1.4.2"}
 ```
 
-230 / 52 = 4.4 倍。十万探针、每探针 1 Hz，一天 86.4 亿条：JSON 装 86.4 亿 × 230 B ≈ 1.99 TB，二进制 449 GB。
+| 编码 | 单条字节 | 开销去了哪 |
+|---|---|---|
+| 紧凑二进制 | 52 | 字段值本身 |
+| JSON | 约 230 | 字段值加键名、引号与逗号 |
+
+230 ÷ 52 = 4.4 倍。十万探针、每探针 1 Hz，一天 86.4 亿条：JSON 装 86.4 亿 × 230 B ≈ 1.99 TB，二进制 449 GB。
 
 先别急着全换：JSONL 用 `jq` 就能查，二进制得先有工具。做法是**上报走二进制，落盘与回放留 JSONL**，`00-setup` 的 `out/samples.jsonl` 是后者。
 
@@ -181,14 +196,14 @@ JSON  {"probe_id":"3f02-11","target":"10.2.3.4","proto":"icmp","src_port":33001,
 | 层 | 只干一件事 | 换它的理由 |
 |---|---|---|
 | 调度 | 决定下一轮发哪些 Job | 固定间隔换成分层间隔（第 11 课） |
-| 协议 | `Probe.Send` 发一包、判一次 | 加 TWAMP、加 HTTP 拨测 |
+| 协议 | `Probe.Send` 发一个包、给出一次判定 | 加 TWAMP、加 HTTP 拨测 |
 | 上报 | 缓冲、批量、重试、压缩 | HTTP 批量换 gRPC 流（第 30 课） |
 
 三层之间只传 `Job` 和 `Result`，这是职责边界：调度只产出 `Job`，不碰套接字；协议只回 `Result`，不管有没有人在等；上报只消费 `Result`，不改一个字节。
 
-切过头的例子见过一次：把「取时间戳」也做成接口，结果每个实现各维护一套时间戳语义，ICMP 打内核态、TCP 打用户态，回放时两条曲线对不齐。想让协议层知道「上报还剩多少缓冲」的改动，会在这里卡住。
+切过头的例子有一个：把「取时间戳」也做成接口，结果每个实现各维护一套时间戳语义，ICMP 打内核态、TCP 打用户态，回放时两条曲线对不齐。想让协议层知道「上报还剩多少缓冲」的改动，会在这里卡住。
 
-## `00-setup` 是这个课的最小版
+## `00-setup` 是这一课的最小版
 
 `labs/00-setup` 一百多行，四件事都在：
 
@@ -196,7 +211,7 @@ JSON  {"probe_id":"3f02-11","target":"10.2.3.4","proto":"icmp","src_port":33001,
 |---|---|---|
 | `probeAll` 用 channel 信号量限 workers，目标间并行、目标内串行 | 限流第二级 | 没有全局包速率；在途上限是全局的，一个慢目标占住一个 worker |
 | `Percentile` 用最近秩法只出 p50/p99，不出平均值 | 口径 | 样本不足 100 条时 p99 就是最大值 |
-| `writeJSONL` 一条一行落盘 | 可回放 | 没记 payload、超时值、源端口 |
+| `writeSamples` 一条一行落盘 | 可回放 | 没记 payload、超时值、源端口 |
 | `probeOnce` 用 TCP 建连耗时替代 RTT | 协议差异 | 掺了对端 accept 时间；`ok: false` 不分原因 |
 
 从这四条补起，就能上生产。
@@ -219,7 +234,7 @@ JSON  {"probe_id":"3f02-11","target":"10.2.3.4","proto":"icmp","src_port":33001,
 1. 源端口（决定 ECMP 分支）、payload 长度（决定分片）、超时值（决定丢包率）、目标 IP 字面量（避开 DNS 轮转）。
 2. `sent_wall_ns` 给跨源对齐与存储分区（第 46 课）；`sent_mono_ns` 只算 RTT。挂钟被 NTP 往回拨 500 ms 时，用它算 RTT 会得到负数。
 3. TCP 靠 RST，UDP 靠 ICMP port unreachable，都能给出 `Refused`；ICMP 没有端口概念，产生不了。`StatusUnknown` 只有 UDP 需要，它的失败判据依赖一个会被静默的 ICMP。
-4. 丢：丢包率里出现缺口，旁边有 `skipped` 计数可查。排：时延曲线出平台期，一批包的时间戳挤在一起，看图像链路变好，实际是队列在替你缓冲。
+4. 丢：丢包率里出现缺口，旁边有 `skipped` 计数可查。排：时延曲线出平台期，一批包的时间戳挤在一起，看图像链路变好，真相是队列在替你缓冲。
 
 :::
 

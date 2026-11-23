@@ -2,11 +2,11 @@
 title: 附录
 ---
 
-五页，四个独立页加一个目录：
+五页内容，三个独立页面加本目录：
 
 | 页 | 内容 |
 |---|---|
-| [A 术语表](./glossary) | 78 条，按主题分组，每条一句话加首课号 |
+| [A 术语表](./glossary) | 92 条，按主题分组，每条一句话加首课号 |
 | [C 基准配置](./benchmark) | 全书容量与开销算术的**唯一**定义处 |
 | [E 环境准备](./setup) | 跑实验要装什么，卡住时看哪一节 |
 | D 课号 ↔ 实验总表 | 在本页下半部分，56 课对 21 个实验 |
@@ -83,12 +83,12 @@ title: 附录
 | 48 | 端到端案例：0.3% 的丢包 | [`18-case`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/18-case) |
 | 49 | 需求翻译与量级估算 | — |
 | 50 | 探测引擎：把 90% 的链路看见 | — |
-| 51 | 百万任务的增量与坏点替换 | [`19-task-increment`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/19-task-increment) |
+| 51 | 三十八万任务的增量与坏点替换 | [`19-task-increment`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/19-task-increment) |
 | 52 | 探针安全与可信 | [`20-probe-security`](https://github.com/lerixhe/idc-network-observability/tree/main/labs/20-probe-security) |
 | 53 | 数据通道与热切灾备 | — |
 | 54 | 阈值是怎么定下来的 | — |
 | 55 | 控制台与复盘三则 | — |
 
-其中 04–07、18、27、41–45 这六课还有**留白版习题**（`labs/exercises/`）：同样的样本、同样的期望输出，只留一个函数给读者填，`make check` 逐字节比对。想自己写一遍的从那里开始，四个习题对应 `01-portstate`、`07-counters`、`11-endpoint`、`15-tools-parse`。
+其中 04–07、18、27、41–45 这十一课还有**留白版习题**（`labs/exercises/`）：同样的样本、同样的期望输出，只留一个函数给读者填，`make check` 逐字节比对。四个习题对应 `01-portstate`、`07-counters`、`11-endpoint`、`15-tools-parse`。
 
 另有两处不在上表里：`labs/13-pipeline` 的 `-only capacity` 段服务 49 课与 53 课的账，`labs/04-ecmp-hash` 的三条覆盖率曲线是 50 课那三次迭代的技术底稿。
