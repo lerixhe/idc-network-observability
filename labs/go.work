@@ -1,0 +1,25 @@
+go 1.22
+
+use (
+	./00-setup
+	./01-portstate
+	./02-device-alive
+	./03-probe-matrix
+	./04-ecmp-hash
+	./05-int-sim
+	./06-snmp-walk
+	./07-counters
+	./08-flow
+	./09-cmdb
+	./10-topology
+	./11-endpoint
+	./12-task
+	./13-pipeline
+	./14-alert
+	./15-tools-parse
+	./16-capture
+	./17-bisect
+	./18-case
+	./19-task-increment
+	./20-probe-security
+)

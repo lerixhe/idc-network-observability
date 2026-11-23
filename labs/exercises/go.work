@@ -1,0 +1,17 @@
+// 留白版练习的 workspace，与上一级 labs/go.work 分开。
+//
+// 为什么要有它：labs/go.work 一旦存在，Go 会从当前目录向上找到它，
+// 于是 labs/exercises/* 这些不在那份 workspace 里的 module 一律报
+// 「current directory is contained in a module that is not one of the
+// workspace modules」。这里给练习单独圈一块，四个习题照样能 go run / go vet。
+//
+// 不把四个习题并进 labs/go.work，还有一个硬理由：它们的 module 路径与
+// 参考实现同名（都是 .../labs/01-portstate），同一个 workspace 里会撞车。
+go 1.22
+
+use (
+	./01-portstate
+	./07-counters
+	./11-endpoint
+	./15-tools-parse
+)

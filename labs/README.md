@@ -17,6 +17,18 @@ make run
 ./scripts/check-labs.sh   # 逐个 go vet + go test
 ```
 
+也可以在 `labs/` 根上直接跑单个实验——`labs/go.work` 把 21 个 module 串成了一个 workspace：
+
+```bash
+cd labs
+go test ./01-portstate/...
+go test ./07-counters/... ./12-task/...
+```
+
+注意 `go test ./...` 在 `labs/` 根上跑不通：Go 的 `./...` 不跨 workspace 里的模块，根目录本身又不属于任何一个 module。批量还是用 `check-labs.sh`。
+
+`labs/exercises/` 有自己的一份 `go.work`，两者互不干扰。原因写在那个文件的开头：留白版的 module 路径与参考实现同名，挤进同一个 workspace 会撞车。
+
 ## 实验清单
 
 | 实验 | 对应章节 | 做什么 |

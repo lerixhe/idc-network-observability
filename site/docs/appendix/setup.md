@@ -47,6 +47,8 @@ labs/
 - 每个实验的产物落在自己的 `out/`，不串味
 - 想批量检查全部：在仓库根跑 `bash scripts/check-labs.sh`（逐个 `go vet` + `go test`，约 10 秒）
 
+`labs/go.work` 把这 21 个 module 串成一个 workspace，于是在 `labs/` 根上可以直接 `go test ./01-portstate/...`，不必先 cd 进去。`go test ./...` 在根上不行——Go 的 `./...` 不跨 workspace 里的模块。
+
 ## 四、四个 make 目标
 
 每个实验的 Makefile 都提供这四个，个别多一两个：
