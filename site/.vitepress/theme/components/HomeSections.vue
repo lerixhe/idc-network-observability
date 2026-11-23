@@ -150,7 +150,7 @@ const facts = [
 				</li>
 				<li>
 					<a class="lp-lab" href="https://lerixhe.github.io/aidc-observability/">
-						<span class="lp-lab__name">第二册 · 智算网络可观测入门</span>
+						<span class="lp-lab__name">第二册 · 智算网络可观测进阶</span>
 						<span class="lp-lab__desc">从有损 IDC 到无损智算：机制、遥测与可运行的实验室。</span>
 					</a>
 				</li>

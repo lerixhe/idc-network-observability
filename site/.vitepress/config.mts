@@ -68,9 +68,9 @@ const sidebar = [
 ]
 
 export default defineConfig({
-	title: 'IDC 网络可观测入门',
+	title: 'IDC 网络可观测指南',
 	description:
-		'IDC 网络可观测入门：端口状态、主动探测、SNMP、流数据、CMDB 与拓扑、平台工程、指标告警、排障定位。写给后端开发的可观测工程第一课，每个机制配可复现的最小实验。',
+		'IDC 网络可观测指南：端口状态、主动探测、SNMP、流数据、CMDB 与拓扑、平台工程、指标告警、排障定位。写给后端开发的可观测工程第一课，每个机制配可复现的最小实验。',
 	lang: 'zh-CN',
 	base: BASE,
 	srcDir: './docs',
